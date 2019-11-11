@@ -9,17 +9,20 @@
 import Foundation
 import UIKit
 
+
+//Creates new game object
 class Game{
     
-    var catagory: String
-    var title: String
-    var video: String
-    var difficulty: Int
-    var playerAmountLow: Int
-    var playerAmountHigh: Int
-    var materials: String
-    var rules: String
-    var favorite: Bool
+    var catagory: String //game catagory out of 4, card, strategy, outside, and dice
+    var title: String //name of the game
+    var video: String //video link
+    var difficulty: Int //difficulty meter from 1-10, images based off the number
+    var playerAmountLow: Int //player amount low end
+    var playerAmountHigh: Int //player amount high end
+    var materials: String //needed materials
+    var rules: String //rules
+    var favorite: Bool //favorited or not(heart icon)
+    var playerAmountString: String
     
     init(catagory: String, title: String, video: String, difficulty: Int, playerAmountLow: Int, playerAmountHigh: Int, materials: String, rules: String, favorite: Bool) {
         self.catagory = catagory
@@ -31,6 +34,17 @@ class Game{
         self.materials = materials
         self.rules = rules
         self.favorite = favorite
+        
+        //logic for playerAmountString
+        if(playerAmountHigh==0){//to indicate plus, example: 2+, 8+
+            self.playerAmountString = "\(playerAmountLow)+"
+        }
+        else if(playerAmountLow==playerAmountHigh){//to get rid of "-"
+            self.playerAmountString = "\(playerAmountLow)"
+        }
+        else{//standard
+            self.playerAmountString = "\(playerAmountLow)-\(playerAmountHigh)"
+        }
     }
     
 }
