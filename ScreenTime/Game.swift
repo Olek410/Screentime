@@ -24,7 +24,9 @@ class Game{
     var favorite: Bool //favorited or not(heart icon)
     var playerAmountString: String
     
-    init(catagory: String, title: String, video: String, difficulty: Int, playerAmountLow: Int, playerAmountHigh: Int, materials: String, rules: String, favorite: Bool) {
+    var gameIndex: Int
+    
+    init(catagory: String, title: String, video: String, difficulty: Int, playerAmountLow: Int, playerAmountHigh: Int, materials: String, rules: String, favorite: Bool, gameIndex: Int) {
         self.catagory = catagory
         self.title = title
         self.video = video
@@ -34,6 +36,7 @@ class Game{
         self.materials = materials
         self.rules = rules
         self.favorite = favorite
+        self.gameIndex = gameIndex
         
         //logic for playerAmountString
         if(playerAmountHigh==0){//to indicate plus, example: 2+, 8+

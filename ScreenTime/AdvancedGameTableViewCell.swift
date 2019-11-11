@@ -19,8 +19,17 @@ class AdvancedGameTableViewCell: UITableViewCell {
     @IBOutlet weak var favorite: UIImageView!
     @IBOutlet weak var playerIcon: UIImageView!
     @IBOutlet weak var players: UILabel!
+    @IBOutlet weak var cellTouch: UIButton!
     
+    var gameIndex = 0
     
+    @IBAction func favoritePressed(_ sender: Any) {
+    }
+    
+    @IBAction func AdvancedGameCellPressed(_ sender: Any) {
+        currentIndex=gameIndex
+        print(gameIndex)
+    }
     func setGame(tempGame:Game){
         catagoryImage.image = UIImage(named: String(tempGame.catagory))
         difficulty.image = UIImage(named: String(tempGame.difficulty))
@@ -29,6 +38,7 @@ class AdvancedGameTableViewCell: UITableViewCell {
         favorite.image = UIImage(named: String(tempGame.favorite))
         playerIcon.image = UIImage(named: "PlayerIcon") //playericon is a static image
         players.text = tempGame.playerAmountString //player amount range
+        self.gameIndex = tempGame.gameIndex
     }
     
 }

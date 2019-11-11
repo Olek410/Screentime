@@ -8,13 +8,13 @@
 
 import UIKit
 
+var currentIndex = 0 //current game index to be used for detailsegue
+var currentGame: Game!
+
 class AdvancedGameViewController: UIViewController {
-
     
+    var games: [Game] = [] //game array for this controller
     
-    //game array for this controller
-    var games: [Game] = []
-
     //link the table inside the view
     @IBOutlet weak var AdvancedTableView: UITableView!
     
@@ -32,9 +32,15 @@ class AdvancedGameViewController: UIViewController {
         var tempGames: [Game] = []
         
         //create more games below
-        tempGames.append(Game(catagory: "Test", title: "Test", video: "Test", difficulty: 1, playerAmountLow: 3, playerAmountHigh: 4, materials: "testmaterials", rules: "testrules", favorite: false))
+        tempGames.append(Game(catagory: "Test", title: "Test", video: "Test", difficulty: 1, playerAmountLow: 3, playerAmountHigh: 4, materials: "testmaterials", rules: "testrules", favorite: false, gameIndex: 0))
+        
+        tempGames.append(Game(catagory: "Test", title: "Test2", video: "Test", difficulty: 1, playerAmountLow: 5, playerAmountHigh: 0, materials: "testmaterials2", rules: "testrules2", favorite: false, gameIndex: 1))
         
         return tempGames
+    }
+    func moveToGameDetail(){
+        currentGame = games[currentIndex]
+        performSegue(withIdentifier: "advancedMoveToDetail", sender: self)
     }
 }
     extension AdvancedGameViewController: UITableViewDataSource, UITableViewDelegate{
@@ -56,6 +62,7 @@ class AdvancedGameViewController: UIViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "AdvancedGameCell") as! AdvancedGameTableViewCell
             
             cell.setGame(tempGame: game)
+            
             
             return cell
             

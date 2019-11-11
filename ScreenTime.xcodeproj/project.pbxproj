@@ -16,7 +16,7 @@
 		F509DCDA237911C200579648 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509DCD9237911C200579648 /* Game.swift */; };
 		F509DCDC2379150200579648 /* AdvancedGameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509DCDB2379150200579648 /* AdvancedGameTableViewCell.swift */; };
 		F509DCDE2379194000579648 /* AdvancedGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509DCDD2379194000579648 /* AdvancedGameViewController.swift */; };
-		F509DCE22379303C00579648 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509DCE12379303C00579648 /* ViewController.swift */; };
+		F509DCE523793D0100579648 /* AdvancedGameDetalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509DCE423793D0100579648 /* AdvancedGameDetalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,7 @@
 		F509DCD9237911C200579648 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		F509DCDB2379150200579648 /* AdvancedGameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedGameTableViewCell.swift; sourceTree = "<group>"; };
 		F509DCDD2379194000579648 /* AdvancedGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedGameViewController.swift; sourceTree = "<group>"; };
-		F509DCE12379303C00579648 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F509DCE423793D0100579648 /* AdvancedGameDetalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedGameDetalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				DA968208235F95D700604078 /* AppDelegate.swift */,
+				F509DCD9237911C200579648 /* Game.swift */,
 				F509DCDD2379194000579648 /* AdvancedGameViewController.swift */,
 				F509DCDB2379150200579648 /* AdvancedGameTableViewCell.swift */,
-				F509DCD9237911C200579648 /* Game.swift */,
+				F509DCE423793D0100579648 /* AdvancedGameDetalViewController.swift */,
 				DA96820C235F95D700604078 /* Main.storyboard */,
-				F509DCE12379303C00579648 /* ViewController.swift */,
 				DA96820F235F95D800604078 /* Assets.xcassets */,
 				DA968211235F95D800604078 /* LaunchScreen.storyboard */,
 				DA968214235F95D800604078 /* Info.plist */,
@@ -265,8 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F509DCE22379303C00579648 /* ViewController.swift in Sources */,
 				F509DCDE2379194000579648 /* AdvancedGameViewController.swift in Sources */,
+				F509DCE523793D0100579648 /* AdvancedGameDetalViewController.swift in Sources */,
 				F509DCDA237911C200579648 /* Game.swift in Sources */,
 				DA968209235F95D700604078 /* AppDelegate.swift in Sources */,
 				F509DCDC2379150200579648 /* AdvancedGameTableViewCell.swift in Sources */,
