@@ -24,6 +24,8 @@ class AdvancedGameTableViewCell: UITableViewCell {
     var gameIndex = 0
     
     @IBAction func favoritePressed(_ sender: Any) {
+        advancedGames[gameIndex].favorite = !advancedGames[gameIndex].favorite
+        favorite.image = UIImage(named: String("heart\(advancedGames[gameIndex].favorite)"))
     }
     
     @IBAction func AdvancedGameCellPressed(_ sender: Any) {
@@ -36,7 +38,7 @@ class AdvancedGameTableViewCell: UITableViewCell {
         difficulty.image = UIImage(named: String(tempGame.difficulty))
         gameName.text = tempGame.title
         requirements.text = tempGame.materials
-        favorite.image = UIImage(named: String(tempGame.favorite))
+        favorite.image = UIImage(named: String("heart\(tempGame.favorite)"))
         playerIcon.image = UIImage(named: "PlayerIcon") //playericon is a static image
         players.text = tempGame.playerAmountString //player amount range
         self.gameIndex = tempGame.gameIndex
