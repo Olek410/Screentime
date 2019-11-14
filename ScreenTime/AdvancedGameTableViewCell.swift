@@ -28,7 +28,8 @@ class AdvancedGameTableViewCell: UITableViewCell {
     
     @IBAction func AdvancedGameCellPressed(_ sender: Any) {
         currentIndex=gameIndex
-        print(gameIndex)
+        updateGame()
+
     }
     func setGame(tempGame:Game){
         catagoryImage.image = UIImage(named: String(tempGame.catagory))
