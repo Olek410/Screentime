@@ -11,30 +11,11 @@
 		DA96820E235F95D700604078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA96820C235F95D700604078 /* Main.storyboard */; };
 		DA968210235F95D800604078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA96820F235F95D800604078 /* Assets.xcassets */; };
 		DA968213235F95D800604078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA968211235F95D800604078 /* LaunchScreen.storyboard */; };
-		DA96821E235F95D800604078 /* ScreenTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA96821D235F95D800604078 /* ScreenTimeTests.swift */; };
-		DA968229235F95D800604078 /* ScreenTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA968228235F95D800604078 /* ScreenTimeUITests.swift */; };
 		F509DCDA237911C200579648 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509DCD9237911C200579648 /* Game.swift */; };
 		F509DCDC2379150200579648 /* AdvancedGameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509DCDB2379150200579648 /* AdvancedGameTableViewCell.swift */; };
 		F509DCDE2379194000579648 /* AdvancedGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509DCDD2379194000579648 /* AdvancedGameViewController.swift */; };
 		F509DCE523793D0100579648 /* AdvancedGameDetalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509DCE423793D0100579648 /* AdvancedGameDetalViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		DA96821A235F95D800604078 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA9681FD235F95D700604078 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DA968204235F95D700604078;
-			remoteInfo = ScreenTime;
-		};
-		DA968225235F95D800604078 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA9681FD235F95D700604078 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DA968204235F95D700604078;
-			remoteInfo = ScreenTime;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DA968205235F95D700604078 /* ScreenTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,12 +24,6 @@
 		DA96820F235F95D800604078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA968212235F95D800604078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA968214235F95D800604078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA968219235F95D800604078 /* ScreenTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA96821D235F95D800604078 /* ScreenTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeTests.swift; sourceTree = "<group>"; };
-		DA96821F235F95D800604078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA968224235F95D800604078 /* ScreenTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA968228235F95D800604078 /* ScreenTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeUITests.swift; sourceTree = "<group>"; };
-		DA96822A235F95D800604078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F509DCD9237911C200579648 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		F509DCDB2379150200579648 /* AdvancedGameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedGameTableViewCell.swift; sourceTree = "<group>"; };
 		F509DCDD2379194000579648 /* AdvancedGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedGameViewController.swift; sourceTree = "<group>"; };
@@ -63,20 +38,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA968216235F95D800604078 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA968221235F95D800604078 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,8 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				DA968207235F95D700604078 /* ScreenTime */,
-				DA96821C235F95D800604078 /* ScreenTimeTests */,
-				DA968227235F95D800604078 /* ScreenTimeUITests */,
 				DA968206235F95D700604078 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,8 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				DA968205235F95D700604078 /* ScreenTime.app */,
-				DA968219235F95D800604078 /* ScreenTimeTests.xctest */,
-				DA968224235F95D800604078 /* ScreenTimeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,24 +71,6 @@
 				DA968214235F95D800604078 /* Info.plist */,
 			);
 			path = ScreenTime;
-			sourceTree = "<group>";
-		};
-		DA96821C235F95D800604078 /* ScreenTimeTests */ = {
-			isa = PBXGroup;
-			children = (
-				DA96821D235F95D800604078 /* ScreenTimeTests.swift */,
-				DA96821F235F95D800604078 /* Info.plist */,
-			);
-			path = ScreenTimeTests;
-			sourceTree = "<group>";
-		};
-		DA968227235F95D800604078 /* ScreenTimeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DA968228235F95D800604078 /* ScreenTimeUITests.swift */,
-				DA96822A235F95D800604078 /* Info.plist */,
-			);
-			path = ScreenTimeUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,42 +93,6 @@
 			productReference = DA968205235F95D700604078 /* ScreenTime.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DA968218235F95D800604078 /* ScreenTimeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DA968230235F95D800604078 /* Build configuration list for PBXNativeTarget "ScreenTimeTests" */;
-			buildPhases = (
-				DA968215235F95D800604078 /* Sources */,
-				DA968216235F95D800604078 /* Frameworks */,
-				DA968217235F95D800604078 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DA96821B235F95D800604078 /* PBXTargetDependency */,
-			);
-			name = ScreenTimeTests;
-			productName = ScreenTimeTests;
-			productReference = DA968219235F95D800604078 /* ScreenTimeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		DA968223235F95D800604078 /* ScreenTimeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DA968233235F95D800604078 /* Build configuration list for PBXNativeTarget "ScreenTimeUITests" */;
-			buildPhases = (
-				DA968220235F95D800604078 /* Sources */,
-				DA968221235F95D800604078 /* Frameworks */,
-				DA968222235F95D800604078 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DA968226235F95D800604078 /* PBXTargetDependency */,
-			);
-			name = ScreenTimeUITests;
-			productName = ScreenTimeUITests;
-			productReference = DA968224235F95D800604078 /* ScreenTimeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,14 +105,6 @@
 				TargetAttributes = {
 					DA968204235F95D700604078 = {
 						CreatedOnToolsVersion = 10.3;
-					};
-					DA968218235F95D800604078 = {
-						CreatedOnToolsVersion = 10.3;
-						TestTargetID = DA968204235F95D700604078;
-					};
-					DA968223235F95D800604078 = {
-						CreatedOnToolsVersion = 10.3;
-						TestTargetID = DA968204235F95D700604078;
 					};
 				};
 			};
@@ -227,8 +122,6 @@
 			projectRoot = "";
 			targets = (
 				DA968204235F95D700604078 /* ScreenTime */,
-				DA968218235F95D800604078 /* ScreenTimeTests */,
-				DA968223235F95D800604078 /* ScreenTimeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -241,20 +134,6 @@
 				DA968213235F95D800604078 /* LaunchScreen.storyboard in Resources */,
 				DA968210235F95D800604078 /* Assets.xcassets in Resources */,
 				DA96820E235F95D700604078 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA968217235F95D800604078 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA968222235F95D800604078 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,36 +152,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA968215235F95D800604078 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA96821E235F95D800604078 /* ScreenTimeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA968220235F95D800604078 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA968229235F95D800604078 /* ScreenTimeUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		DA96821B235F95D800604078 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DA968204235F95D700604078 /* ScreenTime */;
-			targetProxy = DA96821A235F95D800604078 /* PBXContainerItemProxy */;
-		};
-		DA968226235F95D800604078 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DA968204235F95D700604078 /* ScreenTime */;
-			targetProxy = DA968225235F95D800604078 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DA96820C235F95D700604078 /* Main.storyboard */ = {
@@ -476,88 +326,6 @@
 			};
 			name = Release;
 		};
-		DA968231235F95D800604078 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RZAUWH5MN8;
-				INFOPLIST_FILE = ScreenTimeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = onb7220.ScreenTimeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScreenTime.app/ScreenTime";
-			};
-			name = Debug;
-		};
-		DA968232235F95D800604078 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RZAUWH5MN8;
-				INFOPLIST_FILE = ScreenTimeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = onb7220.ScreenTimeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScreenTime.app/ScreenTime";
-			};
-			name = Release;
-		};
-		DA968234235F95D800604078 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RZAUWH5MN8;
-				INFOPLIST_FILE = ScreenTimeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = onb7220.ScreenTimeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ScreenTime;
-			};
-			name = Debug;
-		};
-		DA968235235F95D800604078 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RZAUWH5MN8;
-				INFOPLIST_FILE = ScreenTimeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = onb7220.ScreenTimeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ScreenTime;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,24 +343,6 @@
 			buildConfigurations = (
 				DA96822E235F95D800604078 /* Debug */,
 				DA96822F235F95D800604078 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DA968230235F95D800604078 /* Build configuration list for PBXNativeTarget "ScreenTimeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA968231235F95D800604078 /* Debug */,
-				DA968232235F95D800604078 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DA968233235F95D800604078 /* Build configuration list for PBXNativeTarget "ScreenTimeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA968234235F95D800604078 /* Debug */,
-				DA968235235F95D800604078 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
