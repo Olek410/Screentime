@@ -15,7 +15,7 @@ class AdvancedGameDetalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testLabel.text = currentGame.title
+        //testLabel.text = currentGame.title
     }
     
 }
