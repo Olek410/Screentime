@@ -479,10 +479,10 @@
             </objects>
             <point key="canvasLocation" x="2182.7338129496407" y="513.66906474820144"/>
         </scene>
-        <!--Advanced Game Detal View Controller-->
+        <!--Game Detal View Controller-->
         <scene sceneID="7sm-cx-jDq">
             <objects>
-                <viewController id="tcb-U7-Xcd" customClass="AdvancedGameDetalViewController" customModule="ScreenTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tcb-U7-Xcd" customClass="GameDetalViewController" customModule="ScreenTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iih-aI-ax4">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -793,10 +793,10 @@
             </objects>
             <point key="canvasLocation" x="2183" y="-1009"/>
         </scene>
-        <!--Advanced Game Detal View Controller-->
+        <!--Game Detal View Controller-->
         <scene sceneID="9Ie-W0-B0W">
             <objects>
-                <viewController id="M2C-6i-C1R" customClass="AdvancedGameDetalViewController" customModule="ScreenTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="M2C-6i-C1R" customClass="GameDetalViewController" customModule="ScreenTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bOw-ua-6Ez">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -899,10 +899,10 @@
             </objects>
             <point key="canvasLocation" x="2950" y="-267"/>
         </scene>
-        <!--Advanced Game Detal View Controller-->
+        <!--Game Detal View Controller-->
         <scene sceneID="TwY-3r-uUp">
             <objects>
-                <viewController id="B3V-fD-bVW" customClass="AdvancedGameDetalViewController" customModule="ScreenTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="B3V-fD-bVW" customClass="GameDetalViewController" customModule="ScreenTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4xs-qh-5fj">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1018,8 +1018,8 @@
     <inferredMetricsTieBreakers>
         <segue reference="jS5-ST-Wsw"/>
         <segue reference="Uv8-jY-zTf"/>
-        <segue reference="dJF-nQ-IdF"/>
-        <segue reference="1rC-uL-DBN"/>
+        <segue reference="KZ8-c0-qQH"/>
+        <segue reference="jjI-6t-80W"/>
         <segue reference="M3O-Sz-yvs"/>
     </inferredMetricsTieBreakers>
 </document>
