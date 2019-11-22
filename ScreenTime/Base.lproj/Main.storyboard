@@ -579,6 +579,7 @@
                     </view>
                     <connections>
                         <outlet property="testLabel" destination="3Hx-xe-G12" id="e2o-Mx-ezc"/>
+                        <outlet property="video" destination="AKE-c9-F4G" id="dg7-Nd-CRF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wp6-dg-RlU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -893,6 +894,7 @@
                     </view>
                     <connections>
                         <outlet property="testLabel" destination="cqG-y0-6y4" id="NDV-ip-IDh"/>
+                        <outlet property="video" destination="A93-jH-0cV" id="q9J-Fm-dm6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oou-E6-yxW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -999,6 +1001,7 @@
                     </view>
                     <connections>
                         <outlet property="testLabel" destination="eH6-gr-s5A" id="WRt-ai-ELN"/>
+                        <outlet property="video" destination="kMo-5P-TBV" id="OwB-TJ-RxT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uns-RC-zB1" userLabel="First Responder" sceneMemberID="firstResponder"/>

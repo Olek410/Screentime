@@ -7,15 +7,21 @@
 //
 
 import UIKit
+import WebKit
 
 class GameDetalViewController: UIViewController {
 
     @IBOutlet weak var testLabel: UILabel!
+    
+    @IBOutlet weak var video: WKWebView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //testLabel.text = currentGame.title
     }
+    
+    
     
 }
