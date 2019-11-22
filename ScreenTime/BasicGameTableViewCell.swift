@@ -1,17 +1,16 @@
 //
-//  AdvancedGameTableViewCell.swift
+//  BasicGameTableViewCell.swift
 //  ScreenTime
 //
-//  Created by BigOof on 11/10/19.
+//  Created by Olivier Balazy on 11/22/19.
 //  Copyright © 2019 Olivier Balazy. All rights reserved.
 //
 
 import UIKit
 
-class AdvancedGameTableViewCell: UITableViewCell {
+class BasicGameTableViewCell: UITableViewCell {
 
-    //All outlets of the advnaced version game cell
-    
+  
     @IBOutlet weak var catagoryImage: UIImageView!
     @IBOutlet weak var gameName: UILabel!
     @IBOutlet weak var requirements: UILabel!
@@ -31,7 +30,7 @@ class AdvancedGameTableViewCell: UITableViewCell {
     @IBAction func AdvancedGameCellPressed(_ sender: Any) {
         currentIndex=gameIndex
         updateGame()
-
+        
     }
     func setGame(tempGame:Game){
         catagoryImage.image = UIImage(named: String(tempGame.catagory))

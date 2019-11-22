@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA38B5992388820C00F7F435 /* BasicGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA38B5982388820C00F7F435 /* BasicGameViewController.swift */; };
+		DA38B59B238885E500F7F435 /* BasicGameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA38B59A238885E500F7F435 /* BasicGameTableViewCell.swift */; };
 		DA968209235F95D700604078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA968208235F95D700604078 /* AppDelegate.swift */; };
 		DA96820E235F95D700604078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA96820C235F95D700604078 /* Main.storyboard */; };
 		DA968210235F95D800604078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA96820F235F95D800604078 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA38B5982388820C00F7F435 /* BasicGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicGameViewController.swift; sourceTree = "<group>"; };
+		DA38B59A238885E500F7F435 /* BasicGameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicGameTableViewCell.swift; sourceTree = "<group>"; };
 		DA968205235F95D700604078 /* ScreenTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA968208235F95D700604078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA96820D235F95D700604078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 			children = (
 				DA968208235F95D700604078 /* AppDelegate.swift */,
 				F509DCD9237911C200579648 /* Game.swift */,
+				DA38B5982388820C00F7F435 /* BasicGameViewController.swift */,
+				DA38B59A238885E500F7F435 /* BasicGameTableViewCell.swift */,
 				F509DCDD2379194000579648 /* AdvancedGameViewController.swift */,
 				F509DCDB2379150200579648 /* AdvancedGameTableViewCell.swift */,
 				F509DCE423793D0100579648 /* AdvancedGameDetalViewController.swift */,
@@ -146,9 +152,11 @@
 			files = (
 				F509DCDE2379194000579648 /* AdvancedGameViewController.swift in Sources */,
 				F509DCE523793D0100579648 /* AdvancedGameDetalViewController.swift in Sources */,
+				DA38B59B238885E500F7F435 /* BasicGameTableViewCell.swift in Sources */,
 				F509DCDA237911C200579648 /* Game.swift in Sources */,
 				DA968209235F95D700604078 /* AppDelegate.swift in Sources */,
 				F509DCDC2379150200579648 /* AdvancedGameTableViewCell.swift in Sources */,
+				DA38B5992388820C00F7F435 /* BasicGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

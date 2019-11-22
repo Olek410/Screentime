@@ -38,9 +38,9 @@ class AdvancedGameViewController: UIViewController {
         var tempGames: [Game] = []
         
         //create more games below
-        tempGames.append(Game(catagory: "Test", title: "Test", video: "Test", difficulty: 1, playerAmountLow: 3, playerAmountHigh: 4, materials: "testmaterials", rules: "testrules", favorite: false, gameIndex: 0))
+        tempGames.append(Game(catagory: "Test", title: "Test", video: "Test", difficulty: "Easy", playerAmountLow: 3, playerAmountHigh: 4, materials: "testmaterials", rules: "testrules", favorite: false, gameIndex: 0))
         
-        tempGames.append(Game(catagory: "Test", title: "Test2", video: "Test", difficulty: 1, playerAmountLow: 5, playerAmountHigh: 0, materials: "testmaterials2", rules: "testrules2", favorite: false, gameIndex: 1))
+        tempGames.append(Game(catagory: "Test", title: "Test2", video: "Test", difficulty: "Medium", playerAmountLow: 5, playerAmountHigh: 0, materials: "testmaterials2", rules: "testrules2", favorite: false, gameIndex: 1))
         
         return tempGames
     }

@@ -16,7 +16,7 @@ class Game{
     var catagory: String //game catagory out of 4, card, strategy, outside, and dice
     var title: String //name of the game
     var video: String //video link
-    var difficulty: Int //difficulty meter from 1-10, images based off the number
+    var difficulty: String //difficulty word, easy medium hard
     var playerAmountLow: Int //player amount low end
     var playerAmountHigh: Int //player amount high end
     var materials: String //needed materials
@@ -26,7 +26,7 @@ class Game{
     
     var gameIndex: Int
     
-    init(catagory: String, title: String, video: String, difficulty: Int, playerAmountLow: Int, playerAmountHigh: Int, materials: String, rules: String, favorite: Bool, gameIndex: Int) {
+    init(catagory: String, title: String, video: String, difficulty: String, playerAmountLow: Int, playerAmountHigh: Int, materials: String, rules: String, favorite: Bool, gameIndex: Int) {
         self.catagory = catagory
         self.title = title
         self.video = video
