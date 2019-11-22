@@ -8,12 +8,12 @@
 
 import UIKit
 
-var currentIndex = 0 //current game index to be used for detailsegue
-var currentGame: Game!
+var advancedCurrentIndex = 0 //current game index to be used for detailsegue
+var advancedCurrentGame: Game!
 var advancedGames: [Game] = []
 
 func updateGame(){
-    currentGame = advancedGames[currentIndex]
+    advancedCurrentGame = advancedGames[advancedCurrentIndex]
 }
 
 class AdvancedGameViewController: UIViewController {

@@ -23,12 +23,12 @@ class BasicGameTableViewCell: UITableViewCell {
     var gameIndex = 0
     
     @IBAction func favoritePressed(_ sender: Any) {
-        advancedGames[gameIndex].favorite = !advancedGames[gameIndex].favorite
-        favorite.image = UIImage(named: String("heart\(advancedGames[gameIndex].favorite)"))
+        basicGames[gameIndex].favorite = !basicGames[gameIndex].favorite
+        favorite.image = UIImage(named: String("heart\(basicGames[gameIndex].favorite)"))
     }
     
     @IBAction func AdvancedGameCellPressed(_ sender: Any) {
-        currentIndex=gameIndex
+        basicCurrentIndex=gameIndex
         updateGame()
         
     }

@@ -180,6 +180,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="727" height="179.5"/>
                                                     <connections>
                                                         <action selector="AdvancedGameCellPressed:" destination="SZu-Y7-F0m" eventType="touchUpInside" id="Q2j-xm-xeq"/>
+                                                        <segue destination="M2C-6i-C1R" kind="presentation" id="jS5-ST-Wsw"/>
                                                     </connections>
                                                 </button>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" translatesAutoresizingMaskIntoConstraints="NO" id="Ovz-hW-q12">
@@ -743,6 +744,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="62"/>
                                 <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="44H-cA-emD" kind="presentation" id="3Df-Tv-Agr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qB9-qF-Bfa">
                                 <rect key="frame" x="10" y="825" width="333" height="86"/>
@@ -897,8 +901,8 @@
         <image name="settings" width="654" height="654"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="55A-Qh-KrP"/>
         <segue reference="dJF-nQ-IdF"/>
         <segue reference="Awx-2Q-Fxb"/>
+        <segue reference="3Df-Tv-Agr"/>
     </inferredMetricsTieBreakers>
 </document>

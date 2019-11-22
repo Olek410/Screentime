@@ -29,7 +29,7 @@ class AdvancedGameTableViewCell: UITableViewCell {
     }
     
     @IBAction func AdvancedGameCellPressed(_ sender: Any) {
-        currentIndex=gameIndex
+        advancedCurrentIndex=gameIndex
         updateGame()
 
     }
