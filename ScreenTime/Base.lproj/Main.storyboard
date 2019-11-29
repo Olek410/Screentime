@@ -209,6 +209,7 @@
                                                     </constraints>
                                                     <connections>
                                                         <action selector="favoritePressed:" destination="SZu-Y7-F0m" eventType="touchUpInside" id="Wev-SH-iEm"/>
+                                                        <segue destination="ZwN-zE-nDQ" kind="showDetail" animates="NO" id="iKT-z0-XkY"/>
                                                     </connections>
                                                 </button>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fLy-QD-Haw">
@@ -410,6 +411,7 @@
                                                     </constraints>
                                                     <connections>
                                                         <action selector="favoritePressed:" destination="RsN-Uo-w2F" eventType="touchUpInside" id="Fx6-Mx-tpH"/>
+                                                        <segue destination="TjR-Pw-Dax" kind="showDetail" animates="NO" id="wE0-xF-ic5"/>
                                                     </connections>
                                                 </button>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RoS-Ot-zmJ">
@@ -681,10 +683,10 @@
         <!--Navigation Controller-->
         <scene sceneID="itu-YH-VLO">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zYw-pD-8f1" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="zYw-pD-8f1" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fjH-im-QY2">
-                        <rect key="frame" x="0.0" y="20" width="834" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -699,10 +701,10 @@
         <!--Navigation Controller-->
         <scene sceneID="ziN-tL-X3T">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vl6-iu-FaX" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="vl6-iu-FaX" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FSy-hQ-Sc1">
-                        <rect key="frame" x="0.0" y="20" width="834" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1025,10 +1027,10 @@
         <image name="settings" width="654" height="654"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3cH-C9-Onh"/>
+        <segue reference="jS5-ST-Wsw"/>
         <segue reference="Lrm-2o-zcZ"/>
-        <segue reference="KZ8-c0-qQH"/>
-        <segue reference="1rC-uL-DBN"/>
+        <segue reference="qea-X1-4EI"/>
+        <segue reference="QTM-f8-RVU"/>
         <segue reference="M3O-Sz-yvs"/>
     </inferredMetricsTieBreakers>
 </document>
