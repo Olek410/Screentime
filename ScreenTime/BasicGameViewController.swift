@@ -8,13 +8,13 @@
 
 import UIKit
 
-var basicCurrentIndex = 0 //current game index to be used for detailsegue
+//current game index to be used for detailsegue
+var basicCurrentIndex = 0
+
 var basicCurrentGame: Game!
 var basicGames: [Game] = []
 
-func basicupdateGame(){
-    basicCurrentGame = basicGames[basicCurrentIndex]
-}
+//add more games in homescreen file
 
 class BasicGameViewController: UIViewController {
 
@@ -24,22 +24,16 @@ class BasicGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        basicGames = createGames()
-        
         BasicTableView.delegate = self
         BasicTableView.dataSource = self
         
     }
-    
-    func createGames() ->[Game]{
-        
-        var tempGames: [Game] = []
-        
-        tempGames.append(Game(catagory: "Test", title: "EasyTest", video: "Test", difficulty: "Easy", playerAmountLow: 1, playerAmountHigh: 6, materials: "testmaterials", rules: "testrules", favorite: false, gameIndex: 0))
-        
-        return tempGames
-        
+    //small randomizer wheel at basic screen logic
+    @IBAction func basicRandomizer(_ sender: Any) {
+        overallCurrentGame = basicGames[Int.random(in: 0...(basicGames.count)-1)]
+        performSegue(withIdentifier: "basicRandomizer", sender: self)
     }
+    
 
 }
 
@@ -55,7 +49,7 @@ extension BasicGameViewController: UITableViewDataSource, UITableViewDelegate{
         return basicGames.count
     }
     
-    //shows cells
+    //shows cells(creates cells)
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let game = basicGames[indexPath.row]
         

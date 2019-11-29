@@ -13,15 +13,21 @@ class GameDetalViewController: UIViewController {
 
     @IBOutlet weak var testLabel: UILabel!
     
-    @IBOutlet weak var video: WKWebView!
+    @IBOutlet var video: WKWebView!
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //testLabel.text = currentGame.title
+        //sets webview url to game object video variable
+        video.load(URLRequest(url: URL(string: overallCurrentGame.video)!))
+        
+        testLabel.text = overallCurrentGame.title
     }
-    
+
+        
     
     
 }
+    
+

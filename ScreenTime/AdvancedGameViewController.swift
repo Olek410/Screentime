@@ -8,42 +8,33 @@
 
 import UIKit
 
-var advancedCurrentIndex = 0 //current game index to be used for detailsegue
+//current game index to be used for detailsegue
+var advancedCurrentIndex = 0
+
 var advancedCurrentGame: Game!
 var advancedGames: [Game] = []
 
-func updateGame(){
-    advancedCurrentGame = advancedGames[advancedCurrentIndex]
-}
+//add more games in homescreen file
 
 class AdvancedGameViewController: UIViewController {
-    
-     //game array for this controller
     
     //link the table inside the view
     @IBOutlet weak var AdvancedTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        advancedGames = createGames()
-        
+
         AdvancedTableView.delegate = self
         AdvancedTableView.dataSource = self
         
     }
     
-    func createGames() ->[Game]{
-        
-        var tempGames: [Game] = []
-        
-        //create more games below
-        tempGames.append(Game(catagory: "Test", title: "Test", video: "Test", difficulty: "Easy", playerAmountLow: 3, playerAmountHigh: 4, materials: "testmaterials", rules: "testrules", favorite: false, gameIndex: 0))
-        
-        tempGames.append(Game(catagory: "Test", title: "Test2", video: "Test", difficulty: "Medium", playerAmountLow: 5, playerAmountHigh: 0, materials: "testmaterials2", rules: "testrules2", favorite: false, gameIndex: 1))
-        
-        return tempGames
+    //small randomizer wheel logic
+    @IBAction func advancedRandomizer(_ sender: Any) {
+        overallCurrentGame = advancedGames[Int.random(in: 0...(advancedGames.count)-1)]
+        performSegue(withIdentifier: "advancedRandomizer", sender: self)
     }
+    
     
 }
     extension AdvancedGameViewController: UITableViewDataSource, UITableViewDelegate{
@@ -58,7 +49,7 @@ class AdvancedGameViewController: UIViewController {
             return advancedGames.count
         }
         
-        //shows cells
+        //shows cells(creates cells)
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let game = advancedGames[indexPath.row]
             

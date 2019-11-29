@@ -17,6 +17,8 @@
 		F509DCDC2379150200579648 /* AdvancedGameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509DCDB2379150200579648 /* AdvancedGameTableViewCell.swift */; };
 		F509DCDE2379194000579648 /* AdvancedGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509DCDD2379194000579648 /* AdvancedGameViewController.swift */; };
 		F509DCE523793D0100579648 /* GameDetalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509DCE423793D0100579648 /* GameDetalViewController.swift */; };
+		F54CA1742390FBCD0017F26C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F54CA1732390FBCD0017F26C /* WebKit.framework */; };
+		F54CA176239100A00017F26C /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54CA175239100A00017F26C /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		F509DCDB2379150200579648 /* AdvancedGameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedGameTableViewCell.swift; sourceTree = "<group>"; };
 		F509DCDD2379194000579648 /* AdvancedGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedGameViewController.swift; sourceTree = "<group>"; };
 		F509DCE423793D0100579648 /* GameDetalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetalViewController.swift; sourceTree = "<group>"; };
+		F54CA1732390FBCD0017F26C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F54CA175239100A00017F26C /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F54CA1742390FBCD0017F26C /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +55,7 @@
 			children = (
 				DA968207235F95D700604078 /* ScreenTime */,
 				DA968206235F95D700604078 /* Products */,
+				F54CA1722390FBCD0017F26C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +72,7 @@
 			children = (
 				DA968208235F95D700604078 /* AppDelegate.swift */,
 				F509DCD9237911C200579648 /* Game.swift */,
+				F54CA175239100A00017F26C /* HomeScreen.swift */,
 				DA38B5982388820C00F7F435 /* BasicGameViewController.swift */,
 				DA38B59A238885E500F7F435 /* BasicGameTableViewCell.swift */,
 				F509DCDD2379194000579648 /* AdvancedGameViewController.swift */,
@@ -77,6 +84,14 @@
 				DA968214235F95D800604078 /* Info.plist */,
 			);
 			path = ScreenTime;
+			sourceTree = "<group>";
+		};
+		F54CA1722390FBCD0017F26C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F54CA1732390FBCD0017F26C /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +169,7 @@
 				F509DCE523793D0100579648 /* GameDetalViewController.swift in Sources */,
 				DA38B59B238885E500F7F435 /* BasicGameTableViewCell.swift in Sources */,
 				F509DCDA237911C200579648 /* Game.swift in Sources */,
+				F54CA176239100A00017F26C /* HomeScreen.swift in Sources */,
 				DA968209235F95D700604078 /* AppDelegate.swift in Sources */,
 				F509DCDC2379150200579648 /* AdvancedGameTableViewCell.swift in Sources */,
 				DA38B5992388820C00F7F435 /* BasicGameViewController.swift in Sources */,

@@ -23,16 +23,19 @@ class AdvancedGameTableViewCell: UITableViewCell {
     
     var gameIndex = 0
     
+    //heart pressed
     @IBAction func favoritePressed(_ sender: Any) {
         advancedGames[gameIndex].favorite = !advancedGames[gameIndex].favorite
         favorite.image = UIImage(named: String("heart\(advancedGames[gameIndex].favorite)"))
     }
-    
+    //cell is pressed
     @IBAction func AdvancedGameCellPressed(_ sender: Any) {
-        advancedCurrentIndex=gameIndex
-        updateGame()
+        advancedCurrentIndex = gameIndex
+        advancedCurrentGame = advancedGames[advancedCurrentIndex]
+        overallCurrentGame = advancedCurrentGame
 
     }
+    //sets labels and images to game object variables
     func setGame(tempGame:Game){
         catagoryImage.image = UIImage(named: String(tempGame.catagory))
         difficultyOutlet.text = tempGame.difficulty
