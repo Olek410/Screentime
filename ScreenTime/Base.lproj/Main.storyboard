@@ -33,7 +33,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="vl6-iu-FaX" kind="show" id="yYQ-wV-sYe"/>
+                                            <segue destination="vl6-iu-FaX" kind="showDetail" id="yYQ-wV-sYe"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcN-6g-aHZ">
@@ -45,7 +45,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="zYw-pD-8f1" kind="show" id="eak-Of-fVZ"/>
+                                            <segue destination="zYw-pD-8f1" kind="showDetail" id="eak-Of-fVZ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -58,7 +58,7 @@
                                 <state key="normal" title="Button" image="randomizeWheel"/>
                                 <connections>
                                     <action selector="homeRandomizerPressed:" destination="44H-cA-emD" eventType="touchUpInside" id="2E0-cY-2z6"/>
-                                    <segue destination="B3V-fD-bVW" kind="presentation" identifier="random" id="dki-xg-YbH"/>
+                                    <segue destination="B3V-fD-bVW" kind="showDetail" identifier="random" id="dki-xg-YbH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -104,7 +104,7 @@
                                         </constraints>
                                         <state key="normal" image="settings"/>
                                         <connections>
-                                            <segue destination="tyl-OG-unk" kind="presentation" id="55A-Qh-KrP"/>
+                                            <segue destination="tyl-OG-unk" kind="showDetail" id="55A-Qh-KrP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9W-Kb-5oJ">
@@ -116,7 +116,7 @@
                                         <state key="normal" image="randomizeWheel"/>
                                         <connections>
                                             <action selector="basicRandomizer:" destination="ZwN-zE-nDQ" eventType="touchUpInside" id="fbs-re-pd3"/>
-                                            <segue destination="M2C-6i-C1R" kind="presentation" identifier="basicRandomizer" id="3cH-C9-Onh"/>
+                                            <segue destination="M2C-6i-C1R" kind="showDetail" identifier="basicRandomizer" id="3cH-C9-Onh"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="96Z-t0-y49">
@@ -191,7 +191,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="727" height="179.5"/>
                                                     <connections>
                                                         <action selector="BasicGameCellPressed:" destination="SZu-Y7-F0m" eventType="touchUpInside" id="33K-Nq-7Jf"/>
-                                                        <segue destination="M2C-6i-C1R" kind="presentation" id="jS5-ST-Wsw"/>
+                                                        <segue destination="M2C-6i-C1R" kind="showDetail" id="jS5-ST-Wsw"/>
                                                     </connections>
                                                 </button>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" translatesAutoresizingMaskIntoConstraints="NO" id="Ovz-hW-q12">
@@ -305,7 +305,7 @@
                                         </constraints>
                                         <state key="normal" image="settings"/>
                                         <connections>
-                                            <segue destination="xhf-0b-gY6" kind="presentation" id="FkH-Lm-oE4"/>
+                                            <segue destination="xhf-0b-gY6" kind="showDetail" id="FkH-Lm-oE4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmf-iU-IUp">
@@ -317,7 +317,7 @@
                                         <state key="normal" image="randomizeWheel"/>
                                         <connections>
                                             <action selector="advancedRandomizer:" destination="TjR-Pw-Dax" eventType="touchUpInside" id="6Ve-x4-9JQ"/>
-                                            <segue destination="tcb-U7-Xcd" kind="presentation" identifier="advancedRandomizer" id="Lrm-2o-zcZ"/>
+                                            <segue destination="tcb-U7-Xcd" kind="showDetail" identifier="advancedRandomizer" id="Lrm-2o-zcZ"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FGY-al-Mbq">
@@ -381,7 +381,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Players" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jh-gR-c3X">
-                                                    <rect key="frame" x="568" y="21" width="119" height="46"/>
+                                                    <rect key="frame" x="568.5" y="21" width="118.5" height="46"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="46" id="Nvp-7t-Hd4"/>
                                                     </constraints>
@@ -393,7 +393,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="727" height="179.5"/>
                                                     <connections>
                                                         <action selector="AdvancedGameCellPressed:" destination="RsN-Uo-w2F" eventType="touchUpInside" id="Fkd-C2-NjB"/>
-                                                        <segue destination="tcb-U7-Xcd" kind="presentation" id="Uv8-jY-zTf"/>
+                                                        <segue destination="tcb-U7-Xcd" kind="showDetail" id="Uv8-jY-zTf"/>
                                                     </connections>
                                                 </button>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" translatesAutoresizingMaskIntoConstraints="NO" id="SXf-uJ-QUO">
@@ -506,7 +506,7 @@
                                         </constraints>
                                         <state key="normal" image="backArrow"/>
                                         <connections>
-                                            <segue destination="TjR-Pw-Dax" kind="presentation" id="KZ8-c0-qQH"/>
+                                            <segue destination="TjR-Pw-Dax" kind="showDetail" id="KZ8-c0-qQH"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rqA-sG-5rf">
@@ -613,7 +613,7 @@
                                         </constraints>
                                         <state key="normal" image="backArrow"/>
                                         <connections>
-                                            <segue destination="TjR-Pw-Dax" kind="presentation" id="1kf-yY-eOY"/>
+                                            <segue destination="TjR-Pw-Dax" kind="showDetail" id="1kf-yY-eOY"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -641,7 +641,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="62"/>
                                 <state key="normal" title="Home"/>
                                 <connections>
-                                    <segue destination="44H-cA-emD" kind="presentation" id="wsH-rv-ksa"/>
+                                    <segue destination="44H-cA-emD" kind="showDetail" id="wsH-rv-ksa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZu-9m-cRe">
@@ -652,7 +652,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="62"/>
                                 <state key="normal" title="K-5 Version"/>
                                 <connections>
-                                    <segue destination="ZwN-zE-nDQ" kind="presentation" id="jjI-6t-80W"/>
+                                    <segue destination="ZwN-zE-nDQ" kind="showDetail" id="jjI-6t-80W"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -685,6 +685,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="zYw-pD-8f1" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="xy3-uQ-lTA"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fjH-im-QY2">
                         <autoresizingMask key="autoresizingMask"/>
@@ -703,6 +704,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="vl6-iu-FaX" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="6Ga-ND-98Y"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FSy-hQ-Sc1">
                         <autoresizingMask key="autoresizingMask"/>
@@ -735,7 +737,7 @@
                                         </constraints>
                                         <state key="normal" image="backArrow"/>
                                         <connections>
-                                            <segue destination="ZwN-zE-nDQ" kind="presentation" id="Awx-2Q-Fxb"/>
+                                            <segue destination="ZwN-zE-nDQ" kind="showDetail" id="Awx-2Q-Fxb"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -763,7 +765,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="62"/>
                                 <state key="normal" title="Home"/>
                                 <connections>
-                                    <segue destination="44H-cA-emD" kind="presentation" id="3Df-Tv-Agr"/>
+                                    <segue destination="44H-cA-emD" kind="showDetail" id="3Df-Tv-Agr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qB9-qF-Bfa">
@@ -774,7 +776,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="62"/>
                                 <state key="normal" title="6-12 Version"/>
                                 <connections>
-                                    <segue destination="TjR-Pw-Dax" kind="presentation" id="dJF-nQ-IdF"/>
+                                    <segue destination="TjR-Pw-Dax" kind="showDetail" id="dJF-nQ-IdF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -821,7 +823,7 @@
                                         </constraints>
                                         <state key="normal" image="backArrow"/>
                                         <connections>
-                                            <segue destination="ZwN-zE-nDQ" kind="presentation" id="1rC-uL-DBN"/>
+                                            <segue destination="ZwN-zE-nDQ" kind="showDetail" id="1rC-uL-DBN"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i0N-dx-BCF">
@@ -928,7 +930,7 @@
                                         </constraints>
                                         <state key="normal" image="backArrow"/>
                                         <connections>
-                                            <segue destination="44H-cA-emD" kind="presentation" id="M3O-Sz-yvs"/>
+                                            <segue destination="44H-cA-emD" kind="showDetail" id="M3O-Sz-yvs"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0T-dC-UCd">
@@ -1028,9 +1030,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="jS5-ST-Wsw"/>
-        <segue reference="Lrm-2o-zcZ"/>
-        <segue reference="qea-X1-4EI"/>
-        <segue reference="QTM-f8-RVU"/>
+        <segue reference="Uv8-jY-zTf"/>
+        <segue reference="KZ8-c0-qQH"/>
+        <segue reference="jjI-6t-80W"/>
         <segue reference="M3O-Sz-yvs"/>
     </inferredMetricsTieBreakers>
 </document>
