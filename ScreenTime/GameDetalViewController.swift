@@ -11,18 +11,34 @@ import WebKit
 
 class GameDetalViewController: UIViewController {
 
-    @IBOutlet weak var testLabel: UILabel!
+    @IBOutlet weak var gameTitle: UILabel!
+    @IBOutlet weak var materialsInfo: UILabel!
+    @IBOutlet weak var numberOfPlayers: UILabel!
+    @IBOutlet weak var rulesInfo: UILabel!
     
     @IBOutlet var video: WKWebView!
+    @IBOutlet weak var playButton: UIButton!
     
-
+    //starts video
+    @IBAction func playButtonPressed(_ sender: Any) {
+        playButton.isHidden = true
+        video.load(URLRequest(url: URL(string: overallCurrentGame.video)!))
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //sets webview url to game object video variable
-        video.load(URLRequest(url: URL(string: overallCurrentGame.video)!))
+        playButton.isHidden = false
         
-        testLabel.text = overallCurrentGame.title
+        //sets webview url to game object video variable
+        gameTitle.text = overallCurrentGame.title
+        
+        materialsInfo.text = overallCurrentGame.materials
+        
+        numberOfPlayers.text = "Number of Players: \(overallCurrentGame.playerAmountString)"
+        
+        rulesInfo.text = overallCurrentGame.rules
     }
 
         
