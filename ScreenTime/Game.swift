@@ -11,7 +11,7 @@ import UIKit
 
 
 //Creates new game object
-class Game{
+struct Game: Codable{
     
     var catagory: String //game catagory out of 4, card, strategy, outside, and dice
     var title: String //name of the game
@@ -50,4 +50,22 @@ class Game{
         }
     }
     
+    func encodeData(newGame: Game){
+        let listEncoder = PropertyListEncoder()
+        if let encodedNote = try? listEncoder.encode(newGame){
+            print(encodedNote)
+            print(1)
+            
+            let listDecoder = PropertyListDecoder()
+            if let decodedNote = try?
+                listDecoder.decode(Game.self, from: encodedNote){
+                print(decodedNote)
+                print(2)
+            }
+        }
+    }
+    
 }
+
+
+

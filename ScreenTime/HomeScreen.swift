@@ -27,12 +27,16 @@ class HomeScreen: UIViewController {
         overallGames += basicGames
         overallGames += advancedGames
         
+        let newNote = Game(catagory: "card", title: "Battle", video: "https://youtu.be/23QQ1Hz2-jY", difficulty: "", playerAmountLow: 2, playerAmountHigh: 0, materials: "\u{2022} At least 1 deck of cards", rules: "1. Split the deck into two face down piles and give each person a pile.\n\n2. Each round, everyone grabs a card from their pile and places it face up in the middle.\n\n3. The person with the higher numbered card gets to take both cards and put it in a new pile off to the side.\n\n4. If the numbers are the same, take out two cards but only flip the second one face up. The higher number takes all the cards. You can repeat it as many times as it takes until there is one winner.", favorite: false, gameIndex: 0)
+        newNote.encodeData(newGame: newNote)
+        
     }
     //big randomizer wheel at the home screen logic
     @IBAction func homeRandomizerPressed(_ sender: Any) {
         overallCurrentGame = overallGames[Int.random(in: 0...(overallGames.count)-1)]
         performSegue(withIdentifier: "random", sender: self)
     }
+
     
     //adds games to basicGames array
     func createBasicGames() ->[Game]{
