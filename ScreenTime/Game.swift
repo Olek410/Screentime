@@ -51,17 +51,19 @@ struct Game: Codable{
     }
     
     func encodeData(newGame: Game){
-        let listEncoder = PropertyListEncoder()
-        if let encodedNote = try? listEncoder.encode(newGame){
-            print(encodedNote)
-            print(1)
-            
-            let listDecoder = PropertyListDecoder()
-            if let decodedNote = try?
-                listDecoder.decode(Game.self, from: encodedNote){
-                print(decodedNote)
-                print(2)
-            }
+        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let archiveURL = documentsDirectory.appendingPathComponent("notes_test").appendingPathComponent("plist")
+        
+        let propertylistEncoder = PropertyListEncoder()
+        let encodedNotes = try? propertylistEncoder.encode(newGame)
+        
+        try? encodedNotes?.write(to: archiveURL, options: .noFileProtection)
+        
+        let propertyListDecoder = PropertyListDecoder()
+        if let retrievedNotesData = try? Data(contentsOf: archiveURL),
+            let decodedNotes = try?
+                propertyListDecoder.decode(Game.self, from: retrievedNotesData){
+            print(decodedNotes)
         }
     }
     
