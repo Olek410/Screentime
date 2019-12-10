@@ -26,6 +26,8 @@ class BasicGameTableViewCell: UITableViewCell {
     @IBAction func favoritePressed(_ sender: Any) {
         basicGames[gameIndex].favorite = !basicGames[gameIndex].favorite
         favorite.image = UIImage(named: String("heart\(basicGames[gameIndex].favorite)"))
+        encodeDataBasic()
+        print(overallGames.count)
     }
     //cell is pressed
     @IBAction func BasicGameCellPressed(_ sender: Any) {

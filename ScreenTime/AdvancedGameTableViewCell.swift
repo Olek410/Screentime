@@ -27,6 +27,7 @@ class AdvancedGameTableViewCell: UITableViewCell {
     @IBAction func favoritePressed(_ sender: Any) {
         advancedGames[gameIndex].favorite = !advancedGames[gameIndex].favorite
         favorite.image = UIImage(named: String("heart\(advancedGames[gameIndex].favorite)"))
+        encodeDataAdvanced()
     }
     //cell is pressed
     @IBAction func AdvancedGameCellPressed(_ sender: Any) {
