@@ -58,7 +58,7 @@
                                 <state key="normal" title="Button" image="randomizeWheel"/>
                                 <connections>
                                     <action selector="homeRandomizerPressed:" destination="44H-cA-emD" eventType="touchUpInside" id="2E0-cY-2z6"/>
-                                    <segue destination="B3V-fD-bVW" kind="showDetail" identifier="random" id="dki-xg-YbH"/>
+                                    <segue destination="B3V-fD-bVW" kind="custom" identifier="random" customClass="MoveLeft" customModule="ScreenTime" customModuleProvider="target" id="dki-xg-YbH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -116,7 +116,7 @@
                                         <state key="normal" image="randomizeWheel"/>
                                         <connections>
                                             <action selector="basicRandomizer:" destination="ZwN-zE-nDQ" eventType="touchUpInside" id="fbs-re-pd3"/>
-                                            <segue destination="Tjn-NI-PGc" kind="showDetail" identifier="basicRandomizer" id="3BD-Jy-Bc3"/>
+                                            <segue destination="Tjn-NI-PGc" kind="showDetail" identifier="basicRandomizer" customClass="MoveLeft" customModule="ScreenTime" customModuleProvider="target" id="3BD-Jy-Bc3"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="96Z-t0-y49">
@@ -191,7 +191,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="727" height="179.5"/>
                                                     <connections>
                                                         <action selector="BasicGameCellPressed:" destination="SZu-Y7-F0m" eventType="touchUpInside" id="33K-Nq-7Jf"/>
-                                                        <segue destination="Tjn-NI-PGc" kind="showDetail" id="T0r-wW-zzt"/>
+                                                        <segue destination="Tjn-NI-PGc" kind="showDetail" customClass="MoveLeft" customModule="ScreenTime" customModuleProvider="target" id="T0r-wW-zzt"/>
                                                     </connections>
                                                 </button>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" translatesAutoresizingMaskIntoConstraints="NO" id="Ovz-hW-q12">
@@ -317,7 +317,7 @@
                                         <state key="normal" image="randomizeWheel"/>
                                         <connections>
                                             <action selector="advancedRandomizer:" destination="TjR-Pw-Dax" eventType="touchUpInside" id="6Ve-x4-9JQ"/>
-                                            <segue destination="RaK-pL-NvS" kind="showDetail" identifier="advancedRandomizer" id="dub-qG-jS8"/>
+                                            <segue destination="RaK-pL-NvS" kind="showDetail" identifier="advancedRandomizer" customClass="MoveLeft" customModule="ScreenTime" customModuleProvider="target" id="dub-qG-jS8"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FGY-al-Mbq">
@@ -393,7 +393,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="727" height="179.5"/>
                                                     <connections>
                                                         <action selector="AdvancedGameCellPressed:" destination="RsN-Uo-w2F" eventType="touchUpInside" id="Fkd-C2-NjB"/>
-                                                        <segue destination="RaK-pL-NvS" kind="showDetail" id="fsS-rE-bX9"/>
+                                                        <segue destination="RaK-pL-NvS" kind="showDetail" customClass="MoveLeft" customModule="ScreenTime" customModuleProvider="target" id="fsS-rE-bX9"/>
                                                     </connections>
                                                 </button>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" translatesAutoresizingMaskIntoConstraints="NO" id="SXf-uJ-QUO">
@@ -534,7 +534,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="62"/>
                                 <state key="normal" title="Home"/>
                                 <connections>
-                                    <segue destination="44H-cA-emD" kind="showDetail" id="wsH-rv-ksa"/>
+                                    <segue destination="44H-cA-emD" kind="showDetail" customClass="MoveDown" customModule="ScreenTime" customModuleProvider="target" id="wsH-rv-ksa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZu-9m-cRe">
@@ -658,7 +658,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="62"/>
                                 <state key="normal" title="Home"/>
                                 <connections>
-                                    <segue destination="44H-cA-emD" kind="showDetail" id="3Df-Tv-Agr"/>
+                                    <segue destination="44H-cA-emD" kind="showDetail" customClass="MoveDown" customModule="ScreenTime" customModuleProvider="target" id="3Df-Tv-Agr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qB9-qF-Bfa">
@@ -716,7 +716,7 @@
                                         </constraints>
                                         <state key="normal" image="backArrow"/>
                                         <connections>
-                                            <segue destination="44H-cA-emD" kind="showDetail" id="M3O-Sz-yvs"/>
+                                            <segue destination="44H-cA-emD" kind="custom" customClass="MoveRight" customModule="ScreenTime" customModuleProvider="target" id="M3O-Sz-yvs"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0T-dC-UCd">
@@ -886,7 +886,7 @@
                                         </constraints>
                                         <state key="normal" image="backArrow"/>
                                         <connections>
-                                            <segue destination="ZwN-zE-nDQ" kind="showDetail" id="CHG-Jc-Cc9"/>
+                                            <segue destination="ZwN-zE-nDQ" kind="showDetail" customClass="MoveRight" customModule="ScreenTime" customModuleProvider="target" id="CHG-Jc-Cc9"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAW-ky-4vi">
@@ -1056,7 +1056,7 @@
                                         </constraints>
                                         <state key="normal" image="backArrow"/>
                                         <connections>
-                                            <segue destination="TjR-Pw-Dax" kind="showDetail" id="FPa-tT-SPx"/>
+                                            <segue destination="TjR-Pw-Dax" kind="showDetail" customClass="MoveRight" customModule="ScreenTime" customModuleProvider="target" id="FPa-tT-SPx"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzs-40-nOH">
@@ -1211,7 +1211,7 @@
     <resources>
         <image name="612Icon2" width="2000" height="768"/>
         <image name="K5Icon2" width="2000" height="768"/>
-        <image name="backArrow" width="834" height="1112"/>
+        <image name="backArrow" width="2400" height="2400"/>
         <image name="homeScreenBackground" width="960" height="720"/>
         <image name="person" width="768" height="768"/>
         <image name="playButton" width="117" height="117"/>
@@ -1220,7 +1220,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="dub-qG-jS8"/>
-        <segue reference="3BD-Jy-Bc3"/>
+        <segue reference="T0r-wW-zzt"/>
         <segue reference="FPa-tT-SPx"/>
         <segue reference="CHG-Jc-Cc9"/>
         <segue reference="M3O-Sz-yvs"/>
