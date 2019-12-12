@@ -102,7 +102,7 @@ func createBasicGames() ->[Game]{
     tempGames.append(Game(catagory: "dice", title: "Beat That!", video: "https://apple.com", difficulty: "", playerAmountLow: 2, playerAmountHigh: 0, materials: "\u{2022} 2 Dice", rules: "1. Each player takes a turn rolling the dice and placing them in order to make the highest number possible. For example, if a player throws a two and a three, they have 23.\n\n2. A player who throws a six and a four would win the round as they have the higher number.\n\n3. After each throw, a player challenges the next player, “Beat that!” Play this game in rounds, assigning a winner to each round.", favorite: false, gameIndex: index))
     index += 1
     
-    tempGames.append(Game(catagory: "dice", title: "Going to Bosten", video: "https://apple.com", difficulty: "", playerAmountLow: 2, playerAmountHigh: 0, materials: "\u{2022} 3 Dice", rules: "1. Roll the dice and keep the highest.\n\n2. Roll the remaining dice and again set aside the highest.\n\n3. Roll the last die, and add up your total. Write down your score.", favorite: false, gameIndex: index))
+    tempGames.append(Game(catagory: "dice", title: "Going to Boston", video: "https://apple.com", difficulty: "", playerAmountLow: 2, playerAmountHigh: 0, materials: "\u{2022} 3 Dice", rules: "1. Roll the dice and keep the highest.\n\n2. Roll the remaining dice and again set aside the highest.\n\n3. Roll the last die, and add up your total. Write down your score.", favorite: false, gameIndex: index))
     index += 1
     
     
