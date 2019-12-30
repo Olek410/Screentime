@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ScreenTime.xcodeproj">
+      location = "self:/Users/bigoof/Documents/GitHub/Screentime/PlayOutlet.xcodeproj">
    </FileRef>
 </Workspace>
