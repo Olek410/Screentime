@@ -15,6 +15,36 @@ var overallGames: [Game] = []
 //needed for Codable protocol
 let defaults = UserDefaults.standard
 
+var persistingData: [PersistingData] = []
+
+//Keeps data if items are shown for the first time
+struct PersistingData: Codable{
+    
+    var homeScreenInfo: Bool
+    
+    init(homeScreenInfo: Bool) {
+        self.homeScreenInfo = homeScreenInfo
+    }
+    
+}
+
+func encodePersistingData(){
+    defaults.set(try? PropertyListEncoder().encode(persistingData), forKey: "PersistingData")
+}
+
+func decodePersistingData()->[PersistingData]{
+    guard let persistingData = defaults.object(forKey: "PersistingData") as? Data else{
+        return []
+    }
+    
+    guard let persistingDataExport = try? PropertyListDecoder().decode([PersistingData].self, from: persistingData) else {
+        return []
+    }
+    
+    return persistingDataExport
+    
+}
+
 class HomeScreen: UIViewController {
     
 
@@ -22,6 +52,10 @@ class HomeScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if(decodePersistingData().count == 0){
+            persistingData = [PersistingData(homeScreenInfo: false)]
+        }
         
         if(decodeDataOverall().count == 0){
             createGames()
