@@ -15,6 +15,7 @@ class GameDetalViewController: UIViewController {
     @IBOutlet weak var materialsInfo: UILabel!
     @IBOutlet weak var numberOfPlayers: UILabel!
     @IBOutlet weak var rulesInfo: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet var video: WKWebView!
     @IBOutlet weak var playButton: UIButton!
@@ -29,6 +30,12 @@ class GameDetalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if(overallCurrentGame.video == ""){
+            playButton.isHidden = true
+            video.isHidden = true
+        }
+        
+        video.isHidden = false
         playButton.isHidden = false
         
         //sets webview url to game object video variable
