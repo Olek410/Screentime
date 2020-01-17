@@ -23,7 +23,6 @@
 		F50BE2B9239F450A008A9628 /* GamesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50BE2B8239F450A008A9628 /* GamesData.swift */; };
 		F54CA1742390FBCD0017F26C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F54CA1732390FBCD0017F26C /* WebKit.framework */; };
 		F54CA176239100A00017F26C /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54CA175239100A00017F26C /* HomeScreen.swift */; };
-		F599C26623BBF8BA00E0E2F6 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F599C26523BBF8BA00E0E2F6 /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +44,6 @@
 		F50BE2B8239F450A008A9628 /* GamesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesData.swift; sourceTree = "<group>"; };
 		F54CA1732390FBCD0017F26C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F54CA175239100A00017F26C /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
-		F599C26523BBF8BA00E0E2F6 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +84,6 @@
 				DA843CA723A0477C00C4330E /* MoveDown.swift */,
 				F509DCD9237911C200579648 /* Game.swift */,
 				F50BE2B8239F450A008A9628 /* GamesData.swift */,
-				F599C26523BBF8BA00E0E2F6 /* InfoView.swift */,
 				F54CA175239100A00017F26C /* HomeScreen.swift */,
 				DA38B5982388820C00F7F435 /* BasicGameViewController.swift */,
 				DA38B59A238885E500F7F435 /* BasicGameTableViewCell.swift */,
@@ -185,7 +182,6 @@
 				DA843CA423A0408600C4330E /* MoveLeft.swift in Sources */,
 				F509DCE523793D0100579648 /* GameDetalViewController.swift in Sources */,
 				DA38B59B238885E500F7F435 /* BasicGameTableViewCell.swift in Sources */,
-				F599C26623BBF8BA00E0E2F6 /* InfoView.swift in Sources */,
 				F509DCDA237911C200579648 /* Game.swift in Sources */,
 				F54CA176239100A00017F26C /* HomeScreen.swift in Sources */,
 				DA843CA623A046A700C4330E /* MoveRight.swift in Sources */,
