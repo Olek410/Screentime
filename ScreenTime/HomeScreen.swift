@@ -16,36 +16,6 @@ var overallGames: [Game] = []
 //needed for Codable protocol
 let defaults = UserDefaults.standard
 
-var persistingData: [PersistingData] = []
-
-//Keeps data if items are shown for the first time
-struct PersistingData: Codable{
-    
-    var homeScreenInfo: Bool
-    
-    init(homeScreenInfo: Bool) {
-        self.homeScreenInfo = homeScreenInfo
-    }
-    
-}
-
-func encodePersistingData(){
-    defaults.set(try? PropertyListEncoder().encode(persistingData), forKey: "PersistingData")
-}
-
-func decodePersistingData()->[PersistingData]{
-    guard let persistingData = defaults.object(forKey: "PersistingData") as? Data else{
-        return []
-    }
-    
-    guard let persistingDataExport = try? PropertyListDecoder().decode([PersistingData].self, from: persistingData) else {
-        return []
-    }
-    
-    return persistingDataExport
-    
-}
-
 class HomeScreen: UIViewController {
     
 
@@ -58,10 +28,6 @@ class HomeScreen: UIViewController {
         super.viewDidLoad()
         
         Info.text = "Play Outlet is a collection of fun activities, from tag to checkers, to help you get away from screens. You can learn and enjoy many classic activities on this app!\n\nHow to use:\n\n1. Select an age group to sort activities by difficulty/age-group or press the big wheel on the home screen to get straight to a random activity.\n\n2. Both age group will bring you to a list of activities. Each one has an icon (to show what type of game it is), a simple description, and the materials and number of people needed. You can also click the heart icon to favorite activities!\n\n3. When you tap an activity, it will give you more information such as instructions and more materials. Some activities will even have a video too!\n\n4. Simple icons at the bottom are used to navigate between age groups, home screen, and random activities."
-        
-        if(decodePersistingData().count == 0){
-            persistingData = [PersistingData(homeScreenInfo: false)]
-        }
         
         if(decodeDataOverall().count == 0){
             createGames()

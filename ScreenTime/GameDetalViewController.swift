@@ -30,13 +30,23 @@ class GameDetalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if(overallCurrentGame.video == ""){
+        //Show Image
+        if(overallCurrentGame.video == "" || overallCurrentGame.video == "https://apple.com"){
+            
             playButton.isHidden = true
             video.isHidden = true
+            imageView.isHidden = false
+            imageView.image = UIImage(named: overallCurrentGame.image)
+            print("Image: \(overallCurrentGame.image)")
+        }
+        //Show Video
+        else{
+            video.isHidden = false
+            playButton.isHidden = false
+            imageView.isHidden = true
         }
         
-        video.isHidden = false
-        playButton.isHidden = false
+        
         
         //sets webview url to game object video variable
         gameTitle.text = overallCurrentGame.title
