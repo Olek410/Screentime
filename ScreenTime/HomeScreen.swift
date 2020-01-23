@@ -29,6 +29,12 @@ class HomeScreen: UIViewController {
         
         Info.text = "Play Outlet is a collection of fun activities, from tag to checkers, to help you get away from screens. You can learn and enjoy many classic activities on this app!\n\nHow to use:\n\n1. Select an age group to sort activities by difficulty/age-group or press the big wheel on the home screen to get straight to a random activity.\n\n2. Both age group will bring you to a list of activities. Each one has an icon (to show what type of game it is), a simple description, and the materials and number of people needed. You can also click the heart icon to favorite activities!\n\n3. When you tap an activity, it will give you more information such as instructions and more materials. Some activities will even have a video too!\n\n4. Simple icons at the bottom are used to navigate between age groups, home screen, and random activities."
         
+        //Uncomment this to reset persistent data
+        /*createGames()
+        encodeDataOverall()
+        encodeDataBasic()
+        encodeDataAdvanced()*/
+        
         if(decodeDataOverall().count == 0){
             createGames()
             encodeDataOverall()

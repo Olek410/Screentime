@@ -42,7 +42,7 @@ class BasicGameTableViewCell: UITableViewCell {
         gameName.text = tempGame.title
         requirements.text = tempGame.materials
         favorite.image = UIImage(named: String("heart\(tempGame.favorite)"))
-        playerIcon.image = UIImage(named: "PlayerIcon") //playericon is a static image
+        playerIcon.image = UIImage(named: "playerIcon") //playericon is a static image
         players.text = tempGame.playerAmountString //player amount range
         self.gameIndex = tempGame.gameIndex
     }
