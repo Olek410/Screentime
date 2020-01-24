@@ -33,7 +33,7 @@
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "LightIcon120.png",
+      "filename" : "LightIconNew120.png",
       "scale" : "2x"
     },
     {
@@ -74,25 +74,25 @@
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "LightIcon76.png",
+      "filename" : "LightIconNew76.png",
       "scale" : "1x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "LightIcon152.png",
+      "filename" : "LightIconNew152.png",
       "scale" : "2x"
     },
     {
       "size" : "83.5x83.5",
       "idiom" : "ipad",
-      "filename" : "LightIcon167.png",
+      "filename" : "LightIconNew167.png",
       "scale" : "2x"
     },
     {
       "size" : "1024x1024",
       "idiom" : "ios-marketing",
-      "filename" : "LightIcon1024.png",
+      "filename" : "LightIconNew1024.png",
       "scale" : "1x"
     }
   ],
