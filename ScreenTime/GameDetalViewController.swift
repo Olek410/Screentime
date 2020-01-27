@@ -17,38 +17,11 @@ class GameDetalViewController: UIViewController {
     @IBOutlet weak var rulesInfo: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
-    @IBOutlet var video: WKWebView!
-    @IBOutlet weak var playButton: UIButton!
-    
-    //starts video
-    @IBAction func playButtonPressed(_ sender: Any) {
-        playButton.isHidden = true
-        video.load(URLRequest(url: URL(string: overallCurrentGame.video)!))
-        
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Show Image
-        if(overallCurrentGame.video == "" || overallCurrentGame.video == "https://apple.com"){
-            
-            playButton.isHidden = true
-            video.isHidden = true
-            imageView.isHidden = false
-            imageView.image = UIImage(named: overallCurrentGame.image)
-            print("Image: \(overallCurrentGame.image)")
-        }
-        //Show Video
-        else{
-            video.isHidden = false
-            playButton.isHidden = false
-            imageView.isHidden = true
-        }
+        imageView.image = UIImage(named: overallCurrentGame.image)
         
-        
-        
-        //sets webview url to game object video variable
         gameTitle.text = overallCurrentGame.title
         
         materialsInfo.text = overallCurrentGame.materials

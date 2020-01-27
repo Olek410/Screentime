@@ -15,7 +15,6 @@ struct Game: Codable{
     
     var catagory: String //game catagory out of 4, card, strategy, outside, and dice
     var title: String //name of the game
-    var video: String //video link
     var image: String
     var difficulty: String //difficulty word, easy medium hard
     var playerAmountLow: Int //player amount low end
@@ -27,10 +26,9 @@ struct Game: Codable{
     
     var gameIndex: Int
     
-    init(catagory: String, title: String, video: String, image: String, difficulty: String, playerAmountLow: Int, playerAmountHigh: Int, materials: String, rules: String, favorite: Bool, gameIndex: Int) {
+    init(catagory: String, title: String, image: String, difficulty: String, playerAmountLow: Int, playerAmountHigh: Int, materials: String, rules: String, favorite: Bool, gameIndex: Int) {
         self.catagory = catagory
         self.title = title
-        self.video = video
         self.image = image
         self.difficulty = difficulty
         self.playerAmountLow = playerAmountLow
