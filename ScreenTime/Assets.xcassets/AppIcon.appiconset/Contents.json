@@ -3,7 +3,7 @@
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "LightIconNew40-2.png",
+      "filename" : "LightIconNew40.png",
       "scale" : "2x"
     },
     {
@@ -15,7 +15,7 @@
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "LightIconNew58-1.png",
+      "filename" : "LightIconNew58.png",
       "scale" : "2x"
     },
     {
@@ -27,19 +27,19 @@
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "LightIconNew80-1.png",
+      "filename" : "LightIconNew80.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "LightIconNew120-1.png",
+      "filename" : "LightIconNew120.png",
       "scale" : "3x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "LightIconNew120.png",
+      "filename" : "LightIconNew120-1.png",
       "scale" : "2x"
     },
     {
@@ -57,7 +57,7 @@
     {
       "size" : "20x20",
       "idiom" : "ipad",
-      "filename" : "LightIconNew40.png",
+      "filename" : "LightIconNew40-1.png",
       "scale" : "2x"
     },
     {
@@ -69,19 +69,19 @@
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "LightIconNew58.png",
+      "filename" : "LightIconNew58-1.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "LightIconNew40-1.png",
+      "filename" : "LightIconNew40-2.png",
       "scale" : "1x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "LightIconNew80.png",
+      "filename" : "LightIconNew80-1.png",
       "scale" : "2x"
     },
     {
