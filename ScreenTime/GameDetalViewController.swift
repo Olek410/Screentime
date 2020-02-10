@@ -20,6 +20,8 @@ class GameDetalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        modalPresentationStyle = UIModalPresentationStyle.fullScreen
+        
         imageView.image = UIImage(named: overallCurrentGame.image)
         
         gameTitle.text = overallCurrentGame.title

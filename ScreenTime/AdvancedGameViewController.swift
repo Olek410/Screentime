@@ -23,6 +23,8 @@ class AdvancedGameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        modalPresentationStyle = UIModalPresentationStyle.fullScreen
 
         AdvancedTableView.delegate = self
         AdvancedTableView.dataSource = self

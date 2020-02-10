@@ -202,7 +202,7 @@
                                         </constraints>
                                         <state key="normal" image="612"/>
                                         <connections>
-                                            <segue destination="TjR-Pw-Dax" kind="showDetail" id="IOw-6r-FH4"/>
+                                            <segue destination="TjR-Pw-Dax" kind="custom" customClass="MoveDown" customModule="PlayOutlet" customModuleProvider="target" id="IOw-6r-FH4"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -412,7 +412,7 @@
                                         </constraints>
                                         <state key="normal" image="k5"/>
                                         <connections>
-                                            <segue destination="ZwN-zE-nDQ" kind="showDetail" id="aFi-9g-k4Q"/>
+                                            <segue destination="ZwN-zE-nDQ" kind="custom" customClass="MoveDown" customModule="PlayOutlet" customModuleProvider="target" id="aFi-9g-k4Q"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QqP-R8-blI">
@@ -1062,6 +1062,6 @@
         <segue reference="T0r-wW-zzt"/>
         <segue reference="IOw-6r-FH4"/>
         <segue reference="aFi-9g-k4Q"/>
-        <segue reference="1a7-B5-cbG"/>
+        <segue reference="SlQ-Dg-Agu"/>
     </inferredMetricsTieBreakers>
 </document>

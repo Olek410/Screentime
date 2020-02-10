@@ -24,6 +24,8 @@ class BasicGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        modalPresentationStyle = UIModalPresentationStyle.fullScreen
+        
         BasicTableView.delegate = self
         BasicTableView.dataSource = self
         
