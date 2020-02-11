@@ -20,6 +20,7 @@ class AdvancedGameViewController: UIViewController {
     
     //link the table inside the view
     @IBOutlet weak var AdvancedTableView: UITableView!
+    @IBOutlet weak var advancedRandomizerButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +31,11 @@ class AdvancedGameViewController: UIViewController {
         AdvancedTableView.dataSource = self
         
     }
-    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            advancedRandomizerButton.sendActions(for: .touchUpInside)
+        }
+    }
     //small randomizer wheel logic
     @IBAction func advancedRandomizer(_ sender: Any) {
         overallCurrentGame = advancedGames[Int.random(in: 0...(advancedGames.count)-1)]

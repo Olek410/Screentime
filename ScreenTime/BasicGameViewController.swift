@@ -20,6 +20,8 @@ class BasicGameViewController: UIViewController {
 
     
     @IBOutlet weak var BasicTableView: UITableView!
+    @IBOutlet weak var basicRandomizerButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +31,11 @@ class BasicGameViewController: UIViewController {
         BasicTableView.delegate = self
         BasicTableView.dataSource = self
         
+    }
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            basicRandomizerButton.sendActions(for: .touchUpInside)
+        }
     }
     //small randomizer wheel at basic screen logic
     @IBAction func basicRandomizer(_ sender: Any) {
