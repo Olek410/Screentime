@@ -16,6 +16,8 @@ var overallGames: [Game] = []
 //needed for Codable protocol
 let defaults = UserDefaults.standard
 
+var backsegueIdentifier = 1
+
 class HomeScreen: UIViewController {
     
 
@@ -51,7 +53,8 @@ class HomeScreen: UIViewController {
     }
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
-            randomizerButton.sendActions(for: .touchUpInside)
+            overallCurrentGame = overallGames[Int.random(in: 0...(overallGames.count)-1)]
+            performSegue(withIdentifier: "random", sender: self)
         }
     }
     //big randomizer wheel at the home screen logic

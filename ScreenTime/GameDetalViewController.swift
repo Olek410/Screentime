@@ -36,21 +36,57 @@ class GameDetalViewController: UIViewController, UITextFieldDelegate {
     
     var playerScores: [playerScoreCell] = []
     
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            overallCurrentGame = overallGames[Int.random(in: 0...(overallGames.count)-1)]
+            reloadView()
+        }
+    }
+    
+    
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        pushScoreName(index: textField.tag,text: textField.text ?? "")
+        return true
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         pushScoreName(index: textField.tag,text: textField.text ?? "")
         return true
     }
     
+    func reloadView(){
+        currentPlayerAmount = 0
+        playerScores = []
+        
+        imageView.image = UIImage(named: overallCurrentGame.image)
+        
+        gameTitle.text = overallCurrentGame.title
+        
+        materialsInfo.text = overallCurrentGame.materials
+        
+        numberOfPlayers.text = "Number of Players: \(overallCurrentGame.playerAmountString)"
+        
+        rulesInfo.text = overallCurrentGame.rules
+        
+        for i in 0...4 {
+            scoreCellName[i].delegate = self
+            playerScores.append(playerScoreCell(name: "", score: 0, hidden: true, index: i))
+        }
+        hideScoreCells()
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        playerScores = []
         
         modalPresentationStyle = UIModalPresentationStyle.fullScreen
         
         imageView.image = UIImage(named: overallCurrentGame.image)
         
         gameTitle.text = overallCurrentGame.title
+        print(overallCurrentGame.title)
         
         materialsInfo.text = overallCurrentGame.materials
         
