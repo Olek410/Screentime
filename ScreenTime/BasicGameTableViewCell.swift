@@ -30,6 +30,7 @@ class BasicGameTableViewCell: UITableViewCell {
     }
     //cell is pressed
     @IBAction func BasicGameCellPressed(_ sender: Any) {
+        backsegueIdentifier = 2
         basicCurrentIndex = gameIndex
         basicCurrentGame = basicGames[basicCurrentIndex]
         overallCurrentGame = basicCurrentGame

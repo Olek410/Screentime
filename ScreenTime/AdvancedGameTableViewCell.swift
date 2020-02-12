@@ -31,6 +31,7 @@ class AdvancedGameTableViewCell: UITableViewCell {
     }
     //cell is pressed
     @IBAction func AdvancedGameCellPressed(_ sender: Any) {
+        backsegueIdentifier = 3
         advancedCurrentIndex = gameIndex
         advancedCurrentGame = advancedGames[advancedCurrentIndex]
         overallCurrentGame = advancedCurrentGame

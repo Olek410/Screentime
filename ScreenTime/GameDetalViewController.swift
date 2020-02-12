@@ -36,9 +36,22 @@ class GameDetalViewController: UIViewController, UITextFieldDelegate {
     
     var playerScores: [playerScoreCell] = []
     
+    
+    
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
-            overallCurrentGame = overallGames[Int.random(in: 0...(overallGames.count)-1)]
+            switch backsegueIdentifier {
+            case 1:
+                overallCurrentGame = overallGames[Int.random(in: 0...(overallGames.count)-1)]
+            case 2:
+                overallCurrentGame = basicGames[Int.random(in: 0...(basicGames.count)-1)]
+            case 3:
+                overallCurrentGame = advancedGames[Int.random(in: 0...(advancedGames.count)-1)]
+            default:
+                overallCurrentGame = overallGames[Int.random(in: 0...(overallGames.count)-1)]
+            }
+            
+            
             reloadView()
         }
     }
@@ -56,6 +69,7 @@ class GameDetalViewController: UIViewController, UITextFieldDelegate {
     }
     
     func reloadView(){
+        
         currentPlayerAmount = 0
         playerScores = []
         
@@ -178,6 +192,10 @@ class GameDetalViewController: UIViewController, UITextFieldDelegate {
         updateScoreName()
         
     }
+    
+    @IBAction func backToOtherScreens(_ sender: Any) {
+            performSegue(withIdentifier: String(backsegueIdentifier), sender: self)
+        }
     
 }
     
