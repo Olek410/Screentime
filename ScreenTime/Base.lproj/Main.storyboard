@@ -81,14 +81,17 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BC0-f9-KMe">
-                                                <rect key="frame" x="0.0" y="80" width="794" height="0.0"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="BC0-f9-KMe">
+                                                <rect key="frame" x="0.0" y="80" width="794" height="912"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Tap to Close" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="I8X-Cc-3VQ">
-                                                <rect key="frame" x="0.0" y="120" width="794" height="952"/>
+                                                <rect key="frame" x="0.0" y="1032" width="794" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Q9B-zU-vmb"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1157,9 +1160,9 @@
         <image name="thin house color" width="768" height="768"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="neG-tv-F3S"/>
-        <segue reference="IOw-6r-FH4"/>
-        <segue reference="HxH-i1-wmu"/>
+        <segue reference="dki-xg-YbH"/>
+        <segue reference="oxf-f8-fVj"/>
+        <segue reference="caJ-BR-IIt"/>
         <segue reference="SlQ-Dg-Agu"/>
     </inferredMetricsTieBreakers>
 </document>

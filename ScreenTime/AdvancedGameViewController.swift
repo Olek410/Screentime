@@ -31,13 +31,13 @@ class AdvancedGameViewController: UIViewController {
         AdvancedTableView.dataSource = self
         
     }
-    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+    /*override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
             backsegueIdentifier = 3
             overallCurrentGame = advancedGames[Int.random(in: 0...(advancedGames.count)-1)]
             performSegue(withIdentifier: "advancedRandomizer", sender: self)
         }
-    }
+    }*/
     //small randomizer wheel logic
     @IBAction func advancedRandomizer(_ sender: Any) {
         backsegueIdentifier = 3

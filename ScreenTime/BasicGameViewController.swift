@@ -32,13 +32,13 @@ class BasicGameViewController: UIViewController {
         BasicTableView.dataSource = self
         
     }
-    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+    /*override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
             backsegueIdentifier = 2
             overallCurrentGame = basicGames[Int.random(in: 0...(basicGames.count)-1)]
             performSegue(withIdentifier: "basicRandomizer", sender: self)
         }
-    }
+    }*/
     //small randomizer wheel at basic screen logic
     @IBAction func basicRandomizer(_ sender: Any) {
         backsegueIdentifier = 2

@@ -38,7 +38,8 @@ class GameDetalViewController: UIViewController, UITextFieldDelegate {
     
     
     
-    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+    /*override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+
         if motion == .motionShake {
             switch backsegueIdentifier {
             case 1:
@@ -46,15 +47,14 @@ class GameDetalViewController: UIViewController, UITextFieldDelegate {
             case 2:
                 overallCurrentGame = basicGames[Int.random(in: 0...(basicGames.count)-1)]
             case 3:
-                overallCurrentGame = advancedGames[Int.random(in: 0...(advancedGames.count)-1)]
+                overallCurrentGame = advancedGames[Int.random(in: 0...(advancedGames.count)-1)]     
             default:
                 overallCurrentGame = overallGames[Int.random(in: 0...(overallGames.count)-1)]
             }
             
-            
             reloadView()
         }
-    }
+    }*/
     
     
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
@@ -76,7 +76,7 @@ class GameDetalViewController: UIViewController, UITextFieldDelegate {
         imageView.image = UIImage(named: overallCurrentGame.image)
         
         gameTitle.text = overallCurrentGame.title
-        
+
         materialsInfo.text = overallCurrentGame.materials
         
         numberOfPlayers.text = "Number of Players: \(overallCurrentGame.playerAmountString)"
@@ -100,7 +100,6 @@ class GameDetalViewController: UIViewController, UITextFieldDelegate {
         imageView.image = UIImage(named: overallCurrentGame.image)
         
         gameTitle.text = overallCurrentGame.title
-        print(overallCurrentGame.title)
         
         materialsInfo.text = overallCurrentGame.materials
         
