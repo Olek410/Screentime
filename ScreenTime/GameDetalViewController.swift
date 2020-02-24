@@ -27,6 +27,8 @@ class GameDetalViewController: UIViewController, UITextFieldDelegate {
     
     var currentPlayerAmount = 0
     
+    var currentTextField = UITextField()
+    
     struct playerScoreCell {
         var name: String
         var score: Int
@@ -56,16 +58,18 @@ class GameDetalViewController: UIViewController, UITextFieldDelegate {
         }
     }*/
     
-    
-    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        pushScoreName(index: textField.tag,text: textField.text ?? "")
-        return true
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        currentTextField = textField
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         pushScoreName(index: textField.tag,text: textField.text ?? "")
         return true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField){
+        pushScoreName(index: textField.tag,text: textField.text ?? "")
     }
     
     func reloadView(){
@@ -129,7 +133,6 @@ class GameDetalViewController: UIViewController, UITextFieldDelegate {
     
     func pushScoreName(index: Int, text: String){
         playerScores[index].name = text
-        print(text)
     }
     
     func updateScoreName(){
@@ -180,6 +183,7 @@ class GameDetalViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func removePlayerAction(_ sender: UIButton) {
+        pushScoreName(index: currentTextField.tag,text: currentTextField.text ?? "")
         
         playerScores.remove(at: sender.tag)
         
