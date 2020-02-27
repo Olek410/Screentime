@@ -23,6 +23,7 @@ struct Game: Codable{
     var rules: String //rules
     var favorite: Bool //favorited or not(heart icon)
     var playerAmountString: String
+    var editable: Bool?
     
     var gameIndex: Int
     
@@ -49,6 +50,7 @@ struct Game: Codable{
             self.playerAmountString = "\(playerAmountLow)-\(playerAmountHigh)"
         }
     }
+    
     
 }
 
