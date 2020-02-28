@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DA38B5992388820C00F7F435 /* BasicGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA38B5982388820C00F7F435 /* BasicGameViewController.swift */; };
 		DA38B59B238885E500F7F435 /* BasicGameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA38B59A238885E500F7F435 /* BasicGameTableViewCell.swift */; };
+		DA5225452409B64300135756 /* CustomGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5225442409B64300135756 /* CustomGameViewController.swift */; };
 		DA843CA423A0408600C4330E /* MoveLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA843CA323A0408600C4330E /* MoveLeft.swift */; };
 		DA843CA623A046A700C4330E /* MoveRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA843CA523A046A700C4330E /* MoveRight.swift */; };
 		DA843CA823A0477C00C4330E /* MoveDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA843CA723A0477C00C4330E /* MoveDown.swift */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		DA38B5982388820C00F7F435 /* BasicGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicGameViewController.swift; sourceTree = "<group>"; };
 		DA38B59A238885E500F7F435 /* BasicGameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicGameTableViewCell.swift; sourceTree = "<group>"; };
+		DA5225442409B64300135756 /* CustomGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGameViewController.swift; sourceTree = "<group>"; };
 		DA843CA323A0408600C4330E /* MoveLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveLeft.swift; sourceTree = "<group>"; };
 		DA843CA523A046A700C4330E /* MoveRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveRight.swift; sourceTree = "<group>"; };
 		DA843CA723A0477C00C4330E /* MoveDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveDown.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				F509DCDD2379194000579648 /* AdvancedGameViewController.swift */,
 				F509DCDB2379150200579648 /* AdvancedGameTableViewCell.swift */,
 				F509DCE423793D0100579648 /* GameDetalViewController.swift */,
+				DA5225442409B64300135756 /* CustomGameViewController.swift */,
 				DA96820C235F95D700604078 /* Main.storyboard */,
 				DA96820F235F95D800604078 /* Assets.xcassets */,
 				DA968211235F95D800604078 /* LaunchScreen.storyboard */,
@@ -177,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA5225452409B64300135756 /* CustomGameViewController.swift in Sources */,
 				DA843CA823A0477C00C4330E /* MoveDown.swift in Sources */,
 				F509DCDE2379194000579648 /* AdvancedGameViewController.swift in Sources */,
 				DA843CA423A0408600C4330E /* MoveLeft.swift in Sources */,
