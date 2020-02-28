@@ -23,11 +23,11 @@ struct Game: Codable{
     var rules: String //rules
     var favorite: Bool //favorited or not(heart icon)
     var playerAmountString: String
-    var editable: Bool?
+    var editable: Bool
     
     var gameIndex: Int
     
-    init(catagory: String, title: String, image: String, difficulty: String, playerAmountLow: Int, playerAmountHigh: Int, materials: String, rules: String, favorite: Bool, gameIndex: Int) {
+    init(catagory: String, title: String, image: String, difficulty: String, playerAmountLow: Int, playerAmountHigh: Int, materials: String, rules: String, favorite: Bool, gameIndex: Int, editable: Bool) {
         self.catagory = catagory
         self.title = title
         self.image = image
@@ -38,6 +38,7 @@ struct Game: Codable{
         self.rules = rules
         self.favorite = favorite
         self.gameIndex = gameIndex
+        self.editable = editable
         
         //logic for playerAmountString
         if(playerAmountHigh==0){//to indicate plus, example: 2+, 8+

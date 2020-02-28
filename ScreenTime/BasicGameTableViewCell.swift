@@ -19,6 +19,8 @@ class BasicGameTableViewCell: UITableViewCell {
     @IBOutlet weak var players: UILabel!
     @IBOutlet weak var cellTouch: UIButton!
     @IBOutlet weak var difficultyOutlet: UILabel!
+    @IBOutlet weak var editIcon: UIImageView!
+    @IBOutlet weak var editButton: UIButton!
     
     var gameIndex = 0
     
@@ -36,6 +38,9 @@ class BasicGameTableViewCell: UITableViewCell {
         overallCurrentGame = basicCurrentGame
         
     }
+    @IBAction func BasicGameCustomPressed(_ sender: Any) {
+        backsegueIdentifier = 2
+    }
     //sets labels and images to game object variables
     func setGame(tempGame:Game){
         catagoryImage.image = UIImage(named: String(tempGame.catagory))
@@ -46,6 +51,14 @@ class BasicGameTableViewCell: UITableViewCell {
         playerIcon.image = UIImage(named: "playerIcon") //playericon is a static image
         players.text = tempGame.playerAmountString //player amount range
         self.gameIndex = tempGame.gameIndex
+        
+        if tempGame.editable{
+            editIcon.isHidden = false
+            editButton.isHidden = false
+        }
+        
+        editIcon.isHidden = true
+        editButton.isHidden = true
     }
     
 }

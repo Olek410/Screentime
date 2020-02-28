@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import WebKit
 
 class GameDetalViewController: UIViewController, UITextFieldDelegate {
 
