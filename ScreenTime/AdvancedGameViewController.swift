@@ -45,6 +45,9 @@ class AdvancedGameViewController: UIViewController {
         performSegue(withIdentifier: "advancedRandomizer", sender: self)
     }
     
+    @IBAction func addCustomGame(_ sender: Any) {
+        backsegueIdentifier = 3
+    }
     
 }
     extension AdvancedGameViewController: UITableViewDataSource, UITableViewDelegate{

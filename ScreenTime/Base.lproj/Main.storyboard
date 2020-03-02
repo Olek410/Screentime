@@ -167,18 +167,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H0S-TV-EXC">
                                 <rect key="frame" x="0.0" y="1017" width="834" height="95"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9W-Kb-5oJ">
-                                        <rect key="frame" x="379.5" y="10" width="75" height="75"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="Z9W-Kb-5oJ" secondAttribute="height" multiplier="1:1" id="SEv-L2-syw"/>
-                                            <constraint firstAttribute="width" constant="75" id="lfA-Ry-y2o"/>
-                                        </constraints>
-                                        <state key="normal" image="randomizeWheel"/>
-                                        <connections>
-                                            <action selector="basicRandomizer:" destination="ZwN-zE-nDQ" eventType="touchUpInside" id="fbs-re-pd3"/>
-                                            <segue destination="B3V-fD-bVW" kind="custom" identifier="basicRandomizer" customClass="MoveLeft" customModule="PlayOutlet" customModuleProvider="target" id="neG-tv-F3S"/>
-                                        </connections>
-                                    </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="96Z-t0-y49">
                                         <rect key="frame" x="0.0" y="0.0" width="834" height="2"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -186,59 +174,65 @@
                                             <constraint firstAttribute="height" constant="2" id="cbI-Vu-VNZ"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQ8-IK-P7U">
-                                        <rect key="frame" x="152" y="10" width="75" height="75"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="75" id="0Fs-7c-UXn"/>
-                                            <constraint firstAttribute="width" secondItem="OQ8-IK-P7U" secondAttribute="height" multiplier="1:1" id="N3W-8d-C45"/>
-                                        </constraints>
-                                        <state key="normal" image="thin house color"/>
-                                        <connections>
-                                            <segue destination="44H-cA-emD" kind="custom" customClass="MoveDown" customModule="PlayOutlet" customModuleProvider="target" id="SlQ-Dg-Agu"/>
-                                        </connections>
-                                    </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WtQ-C8-Aae">
-                                        <rect key="frame" x="576" y="0.0" width="250" height="95"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="F9w-FP-JkP">
+                                        <rect key="frame" x="40" y="10" width="754" height="75"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7Z-Ox-PL9">
-                                                <rect key="frame" x="0.0" y="0.0" width="125" height="95"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQ8-IK-P7U">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="A7Z-Ox-PL9" secondAttribute="height" multiplier="1:1" id="1GM-A8-Sjy"/>
-                                                    <constraint firstAttribute="width" secondItem="A7Z-Ox-PL9" secondAttribute="height" multiplier="1:1" id="yLg-yk-xMU"/>
+                                                    <constraint firstAttribute="width" secondItem="OQ8-IK-P7U" secondAttribute="height" multiplier="1:1" id="N3W-8d-C45"/>
+                                                </constraints>
+                                                <state key="normal" image="thin house color"/>
+                                                <connections>
+                                                    <segue destination="44H-cA-emD" kind="custom" customClass="MoveDown" customModule="PlayOutlet" customModuleProvider="target" id="SlQ-Dg-Agu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9W-Kb-5oJ">
+                                                <rect key="frame" x="226.5" y="0.0" width="75" height="75"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Z9W-Kb-5oJ" secondAttribute="height" multiplier="1:1" id="SEv-L2-syw"/>
+                                                </constraints>
+                                                <state key="normal" image="randomizeWheel"/>
+                                                <connections>
+                                                    <action selector="basicRandomizer:" destination="ZwN-zE-nDQ" eventType="touchUpInside" id="fbs-re-pd3"/>
+                                                    <segue destination="B3V-fD-bVW" kind="custom" identifier="basicRandomizer" customClass="MoveLeft" customModule="PlayOutlet" customModuleProvider="target" id="neG-tv-F3S"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKm-Xd-Gfc">
+                                                <rect key="frame" x="452.5" y="0.0" width="75" height="75"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="CKm-Xd-Gfc" secondAttribute="height" multiplier="1:1" id="dmr-gm-Fte"/>
                                                 </constraints>
                                                 <state key="normal" image="612"/>
                                                 <connections>
-                                                    <segue destination="TjR-Pw-Dax" kind="custom" customClass="MoveDown" customModule="PlayOutlet" customModuleProvider="target" id="IOw-6r-FH4"/>
+                                                    <segue destination="TjR-Pw-Dax" kind="custom" customClass="MoveDown" customModule="PlayOutlet" customModuleProvider="target" id="JPx-sv-PmK"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="183-tZ-b2b">
-                                                <rect key="frame" x="125" y="0.0" width="125" height="95"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4l0-iz-vaM">
+                                                <rect key="frame" x="679" y="0.0" width="75" height="75"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="4l0-iz-vaM" secondAttribute="height" multiplier="1:1" id="QUP-Re-1pc"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                                 <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="addCustomGame:" destination="ZwN-zE-nDQ" eventType="touchUpInside" id="GmW-7Z-U5j"/>
+                                                    <segue destination="1ri-Od-p1p" kind="custom" customClass="MoveLeft" customModule="PlayOutlet" customModuleProvider="target" id="J24-iW-LgV"/>
+                                                </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="A7Z-Ox-PL9" firstAttribute="width" secondItem="183-tZ-b2b" secondAttribute="width" id="lf8-6P-78H"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="Z9W-Kb-5oJ" firstAttribute="top" secondItem="H0S-TV-EXC" secondAttribute="top" constant="10" id="89b-WJ-Uxu"/>
-                                    <constraint firstItem="WtQ-C8-Aae" firstAttribute="top" secondItem="H0S-TV-EXC" secondAttribute="top" id="Cs3-5i-2ey"/>
                                     <constraint firstItem="96Z-t0-y49" firstAttribute="top" secondItem="H0S-TV-EXC" secondAttribute="top" id="FPh-NS-x15"/>
-                                    <constraint firstItem="WtQ-C8-Aae" firstAttribute="leading" secondItem="Z9W-Kb-5oJ" secondAttribute="trailing" priority="900" constant="8" id="JV3-Jg-ZqB"/>
+                                    <constraint firstItem="F9w-FP-JkP" firstAttribute="top" secondItem="H0S-TV-EXC" secondAttribute="top" constant="10" id="J1B-qL-3BA"/>
                                     <constraint firstAttribute="trailing" secondItem="96Z-t0-y49" secondAttribute="trailing" id="NpU-VC-Sg0"/>
-                                    <constraint firstAttribute="trailing" secondItem="WtQ-C8-Aae" secondAttribute="trailing" constant="8" id="Q5v-k3-juX"/>
-                                    <constraint firstAttribute="bottom" secondItem="WtQ-C8-Aae" secondAttribute="bottom" id="QKD-4e-5zp"/>
-                                    <constraint firstAttribute="bottom" secondItem="Z9W-Kb-5oJ" secondAttribute="bottom" constant="10" id="Wce-pY-Ydz"/>
-                                    <constraint firstItem="OQ8-IK-P7U" firstAttribute="width" secondItem="OQ8-IK-P7U" secondAttribute="height" multiplier="1:1" id="Xyw-hE-sHm"/>
-                                    <constraint firstItem="OQ8-IK-P7U" firstAttribute="top" secondItem="Z9W-Kb-5oJ" secondAttribute="top" id="Ycb-bN-9cw"/>
-                                    <constraint firstItem="OQ8-IK-P7U" firstAttribute="leading" secondItem="H0S-TV-EXC" secondAttribute="leading" constant="152" id="cba-Uy-Vv7"/>
-                                    <constraint firstItem="WtQ-C8-Aae" firstAttribute="width" secondItem="H0S-TV-EXC" secondAttribute="width" multiplier="0.3" id="dIN-tM-43i"/>
+                                    <constraint firstItem="F9w-FP-JkP" firstAttribute="leading" secondItem="H0S-TV-EXC" secondAttribute="leading" constant="40" id="hVU-tx-ze3"/>
                                     <constraint firstItem="96Z-t0-y49" firstAttribute="leading" secondItem="H0S-TV-EXC" secondAttribute="leading" id="nBs-iN-nro"/>
-                                    <constraint firstItem="Z9W-Kb-5oJ" firstAttribute="centerX" secondItem="H0S-TV-EXC" secondAttribute="centerX" id="r54-5J-XfS"/>
-                                    <constraint firstItem="OQ8-IK-P7U" firstAttribute="width" secondItem="OQ8-IK-P7U" secondAttribute="height" multiplier="1:1" id="wZp-HV-Egn"/>
+                                    <constraint firstAttribute="trailing" secondItem="F9w-FP-JkP" secondAttribute="trailing" constant="40" id="oul-EH-8Lq"/>
+                                    <constraint firstAttribute="bottom" secondItem="F9w-FP-JkP" secondAttribute="bottom" constant="10" id="uP8-7o-r1V"/>
+                                    <constraint firstAttribute="height" constant="95" id="zSV-L5-NW9"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vBe-hj-YO4">
@@ -426,18 +420,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3bu-Eu-xwV">
                                 <rect key="frame" x="0.0" y="1017" width="834" height="95"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmf-iU-IUp">
-                                        <rect key="frame" x="379.5" y="10" width="75" height="75"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="rmf-iU-IUp" secondAttribute="height" multiplier="1:1" id="32N-uk-W2v"/>
-                                            <constraint firstAttribute="width" constant="75" id="FjJ-vN-lqV"/>
-                                        </constraints>
-                                        <state key="normal" image="randomizeWheel"/>
-                                        <connections>
-                                            <action selector="advancedRandomizer:" destination="TjR-Pw-Dax" eventType="touchUpInside" id="6Ve-x4-9JQ"/>
-                                            <segue destination="B3V-fD-bVW" kind="custom" identifier="advancedRandomizer" customClass="MoveLeft" customModule="PlayOutlet" customModuleProvider="target" id="71X-OM-F9t"/>
-                                        </connections>
-                                    </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FGY-al-Mbq">
                                         <rect key="frame" x="0.0" y="0.0" width="834" height="2"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -445,47 +427,68 @@
                                             <constraint firstAttribute="height" constant="2" id="3cP-Lq-tsS"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BjP-eC-w91">
-                                        <rect key="frame" x="617" y="8" width="75" height="75"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="BjP-eC-w91" secondAttribute="height" multiplier="1:1" id="I1e-CS-9XQ"/>
-                                            <constraint firstAttribute="width" constant="75" id="rsT-IM-noD"/>
-                                        </constraints>
-                                        <state key="normal" image="k5"/>
-                                        <connections>
-                                            <segue destination="ZwN-zE-nDQ" kind="custom" customClass="MoveDown" customModule="PlayOutlet" customModuleProvider="target" id="aFi-9g-k4Q"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QqP-R8-blI">
-                                        <rect key="frame" x="162" y="8" width="75" height="75"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="QqP-R8-blI" secondAttribute="height" multiplier="1:1" id="iSa-Vf-j4i"/>
-                                            <constraint firstAttribute="width" constant="75" id="xCF-2y-yAY"/>
-                                        </constraints>
-                                        <state key="normal" image="thin house color"/>
-                                        <connections>
-                                            <segue destination="44H-cA-emD" kind="custom" customClass="MoveDown" customModule="PlayOutlet" customModuleProvider="target" id="1a7-B5-cbG"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="xKE-dq-JRS">
+                                        <rect key="frame" x="40" y="10" width="754" height="75"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QqP-R8-blI">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="QqP-R8-blI" secondAttribute="height" multiplier="1:1" id="iSa-Vf-j4i"/>
+                                                    <constraint firstAttribute="width" constant="75" id="xCF-2y-yAY"/>
+                                                </constraints>
+                                                <state key="normal" image="thin house color"/>
+                                                <connections>
+                                                    <segue destination="44H-cA-emD" kind="custom" customClass="MoveDown" customModule="PlayOutlet" customModuleProvider="target" id="1a7-B5-cbG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmf-iU-IUp">
+                                                <rect key="frame" x="226.5" y="0.0" width="75" height="75"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="rmf-iU-IUp" secondAttribute="height" multiplier="1:1" id="32N-uk-W2v"/>
+                                                    <constraint firstAttribute="width" constant="75" id="FjJ-vN-lqV"/>
+                                                </constraints>
+                                                <state key="normal" image="randomizeWheel"/>
+                                                <connections>
+                                                    <action selector="advancedRandomizer:" destination="TjR-Pw-Dax" eventType="touchUpInside" id="6Ve-x4-9JQ"/>
+                                                    <segue destination="B3V-fD-bVW" kind="custom" identifier="advancedRandomizer" customClass="MoveLeft" customModule="PlayOutlet" customModuleProvider="target" id="71X-OM-F9t"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BjP-eC-w91">
+                                                <rect key="frame" x="452.5" y="0.0" width="75" height="75"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="BjP-eC-w91" secondAttribute="height" multiplier="1:1" id="I1e-CS-9XQ"/>
+                                                    <constraint firstAttribute="width" constant="75" id="rsT-IM-noD"/>
+                                                </constraints>
+                                                <state key="normal" image="k5"/>
+                                                <connections>
+                                                    <segue destination="ZwN-zE-nDQ" kind="custom" customClass="MoveDown" customModule="PlayOutlet" customModuleProvider="target" id="aFi-9g-k4Q"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erR-1g-vKM">
+                                                <rect key="frame" x="679" y="0.0" width="75" height="75"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="erR-1g-vKM" secondAttribute="height" multiplier="1:1" id="lJh-Fh-OeV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                                <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="addCustomGame:" destination="TjR-Pw-Dax" eventType="touchUpInside" id="xyK-qM-veJ"/>
+                                                    <segue destination="1ri-Od-p1p" kind="custom" customClass="MoveLeft" customModule="PlayOutlet" customModuleProvider="target" id="lrq-rL-mPd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="rmf-iU-IUp" firstAttribute="top" secondItem="3bu-Eu-xwV" secondAttribute="top" constant="10" id="0f0-XY-u1i"/>
-                                    <constraint firstAttribute="bottom" secondItem="rmf-iU-IUp" secondAttribute="bottom" constant="10" id="6r7-RL-01z"/>
+                                    <constraint firstItem="xKE-dq-JRS" firstAttribute="top" secondItem="3bu-Eu-xwV" secondAttribute="top" constant="10" id="0C2-Dl-24P"/>
                                     <constraint firstItem="FGY-al-Mbq" firstAttribute="leading" secondItem="3bu-Eu-xwV" secondAttribute="leading" id="A5A-aO-tjv"/>
-                                    <constraint firstAttribute="trailing" secondItem="BjP-eC-w91" secondAttribute="trailing" constant="142" id="IZf-fo-vrk"/>
-                                    <constraint firstItem="QqP-R8-blI" firstAttribute="width" secondItem="QqP-R8-blI" secondAttribute="height" multiplier="1:1" id="LnL-nB-ecu"/>
-                                    <constraint firstItem="QqP-R8-blI" firstAttribute="width" secondItem="QqP-R8-blI" secondAttribute="height" multiplier="1:1" id="OIO-NA-bZY"/>
                                     <constraint firstAttribute="trailing" secondItem="FGY-al-Mbq" secondAttribute="trailing" id="PE1-Bz-qQ9"/>
-                                    <constraint firstItem="BjP-eC-w91" firstAttribute="top" secondItem="3bu-Eu-xwV" secondAttribute="topMargin" id="WOA-C9-vE4"/>
-                                    <constraint firstItem="QqP-R8-blI" firstAttribute="top" secondItem="BjP-eC-w91" secondAttribute="top" id="ZB5-at-tWq"/>
+                                    <constraint firstItem="xKE-dq-JRS" firstAttribute="leading" secondItem="3bu-Eu-xwV" secondAttribute="leading" constant="40" id="ZbF-EE-32q"/>
                                     <constraint firstItem="FGY-al-Mbq" firstAttribute="top" secondItem="3bu-Eu-xwV" secondAttribute="top" id="ZhM-Fg-sB6"/>
-                                    <constraint firstItem="QqP-R8-blI" firstAttribute="width" secondItem="QqP-R8-blI" secondAttribute="height" multiplier="1:1" id="bfr-rE-8TC"/>
                                     <constraint firstAttribute="height" constant="95" id="eMK-yy-PkA"/>
-                                    <constraint firstItem="BjP-eC-w91" firstAttribute="width" secondItem="BjP-eC-w91" secondAttribute="height" multiplier="1:1" id="eQb-dW-sb9"/>
-                                    <constraint firstItem="QqP-R8-blI" firstAttribute="leading" secondItem="3bu-Eu-xwV" secondAttribute="leading" constant="162" id="hSA-zY-SMQ"/>
-                                    <constraint firstItem="rmf-iU-IUp" firstAttribute="centerX" secondItem="3bu-Eu-xwV" secondAttribute="centerX" id="i8O-iL-Sds"/>
-                                    <constraint firstItem="BjP-eC-w91" firstAttribute="width" secondItem="BjP-eC-w91" secondAttribute="height" multiplier="1:1" id="nqB-NQ-9b2"/>
+                                    <constraint firstAttribute="trailing" secondItem="xKE-dq-JRS" secondAttribute="trailing" constant="40" id="gaP-e7-vX8"/>
+                                    <constraint firstAttribute="bottom" secondItem="xKE-dq-JRS" secondAttribute="bottom" constant="10" id="l0w-Uc-As1"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nhd-9j-4jC">
@@ -735,6 +738,21 @@
                                     <constraint firstAttribute="height" constant="447" id="gEn-v6-fcr"/>
                                 </constraints>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert Materials" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8PZ-bR-3H0">
+                                <rect key="frame" x="20" y="567" width="794" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gug-77-Xp3"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Insert Rules here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HBh-CJ-51x">
+                                <rect key="frame" x="20" y="627" width="794" height="370"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -742,8 +760,15 @@
                             <constraint firstItem="fhz-NC-tuJ" firstAttribute="trailing" secondItem="eHy-dI-XY3" secondAttribute="trailing" constant="20" id="5yF-vh-A06"/>
                             <constraint firstItem="slK-le-fkE" firstAttribute="top" secondItem="eHy-dI-XY3" secondAttribute="bottom" constant="20" id="CsL-5N-2q7"/>
                             <constraint firstItem="slK-le-fkE" firstAttribute="leading" secondItem="fhz-NC-tuJ" secondAttribute="leading" constant="20" id="D7P-fN-AOd"/>
+                            <constraint firstItem="fhz-NC-tuJ" firstAttribute="trailing" secondItem="8PZ-bR-3H0" secondAttribute="trailing" constant="20" id="OPS-3O-Umg"/>
+                            <constraint firstItem="8PZ-bR-3H0" firstAttribute="leading" secondItem="fhz-NC-tuJ" secondAttribute="leading" constant="20" id="Rs9-qq-Sye"/>
+                            <constraint firstItem="fhz-NC-tuJ" firstAttribute="trailing" secondItem="HBh-CJ-51x" secondAttribute="trailing" constant="20" id="Sdm-FI-DZP"/>
                             <constraint firstItem="eHy-dI-XY3" firstAttribute="top" secondItem="fhz-NC-tuJ" secondAttribute="top" constant="20" id="UFm-cK-iT8"/>
+                            <constraint firstItem="HBh-CJ-51x" firstAttribute="top" secondItem="8PZ-bR-3H0" secondAttribute="bottom" constant="20" id="bl0-7T-EgN"/>
+                            <constraint firstItem="8PZ-bR-3H0" firstAttribute="top" secondItem="slK-le-fkE" secondAttribute="bottom" constant="20" id="gYx-qs-mAG"/>
                             <constraint firstItem="G66-Fc-y57" firstAttribute="bottom" secondItem="fhz-NC-tuJ" secondAttribute="bottom" id="jom-WU-24o"/>
+                            <constraint firstItem="G66-Fc-y57" firstAttribute="top" secondItem="HBh-CJ-51x" secondAttribute="bottom" constant="20" id="mBF-8E-3aS"/>
+                            <constraint firstItem="HBh-CJ-51x" firstAttribute="leading" secondItem="fhz-NC-tuJ" secondAttribute="leading" constant="20" id="ord-MK-bnC"/>
                             <constraint firstItem="fhz-NC-tuJ" firstAttribute="trailing" secondItem="slK-le-fkE" secondAttribute="trailing" constant="20" id="p9a-Kw-CeK"/>
                             <constraint firstItem="G66-Fc-y57" firstAttribute="leading" secondItem="fhz-NC-tuJ" secondAttribute="leading" id="tXy-3x-rkW"/>
                             <constraint firstItem="eHy-dI-XY3" firstAttribute="leading" secondItem="fhz-NC-tuJ" secondAttribute="leading" constant="20" id="ulZ-9g-yzU"/>
@@ -1326,10 +1351,10 @@
         <image name="thin house color" width="768" height="768"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jr7-sL-Qht"/>
-        <segue reference="oKX-9D-4EP"/>
-        <segue reference="IOw-6r-FH4"/>
-        <segue reference="aFi-9g-k4Q"/>
-        <segue reference="SlQ-Dg-Agu"/>
+        <segue reference="dki-xg-YbH"/>
+        <segue reference="YLa-T2-xeb"/>
+        <segue reference="00B-Tq-Ilq"/>
+        <segue reference="vdk-QO-9aE"/>
+        <segue reference="1a7-B5-cbG"/>
     </inferredMetricsTieBreakers>
 </document>

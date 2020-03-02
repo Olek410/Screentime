@@ -47,6 +47,9 @@ class BasicGameViewController: UIViewController {
     }
     
 
+    @IBAction func addCustomGame(_ sender: Any) {
+        backsegueIdentifier = 2
+    }
 }
 
 extension BasicGameViewController: UITableViewDataSource, UITableViewDelegate{
