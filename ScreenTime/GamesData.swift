@@ -143,8 +143,6 @@ func createBasicGames() ->[Game]{
         
         tempGames.append(Game(catagory: "dice", title: "Round the Clock", image: "knockOutAndBeatThatAndRoundTheClock", difficulty: "", playerAmountLow: 2, playerAmountHigh: 0, materials: "\u{2022}2 dice", rules: "1. Choose the first player with a dice throw; the player with the lowest total going first.\n\n2. The first player throws both dice, hoping to throw a 1. Players then take turns (in a clockwise direction) trying to throw a 1.\n\n3. On the next round, those players who threw throw a 1 will try to throw a 2. Any player who did not throw a 1 in the first round will try again this round. Players can do so by throwing a 2 or two 1s.\n\n4. Play continues round-by-round with players trying to throw all the numbers from 1 to 12 in sequence. Players may count the spots on just one die or on both dice added together. For example, throwing a 3 and a 6 could be counted as 3, 6, or 9.\n\n5. The first player to go “Round the Clock” – throw all the numbers from 1 to 12 in order – wins the game.", favorite: false, gameIndex: index, editable: false))
         index += 1
-
-    
     
     return tempGames
     

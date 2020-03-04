@@ -39,7 +39,11 @@ class BasicGameTableViewCell: UITableViewCell {
         
     }
     @IBAction func BasicGameCustomPressed(_ sender: Any) {
+        newGameBoolean = false
         backsegueIdentifier = 2
+        basicCurrentIndex = gameIndex
+        basicCurrentGame = basicGames[basicCurrentIndex]
+        overallCurrentGame = basicCurrentGame
     }
     //sets labels and images to game object variables
     func setGame(tempGame:Game){
@@ -55,10 +59,13 @@ class BasicGameTableViewCell: UITableViewCell {
         if tempGame.editable{
             editIcon.isHidden = false
             editButton.isHidden = false
+            catagoryImage.isHidden = true
         }
-        
-        editIcon.isHidden = true
-        editButton.isHidden = true
+        else{
+            editIcon.isHidden = true
+            editButton.isHidden = true
+            catagoryImage.isHidden = false
+        }
     }
     
 }

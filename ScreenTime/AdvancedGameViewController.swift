@@ -47,6 +47,7 @@ class AdvancedGameViewController: UIViewController {
     
     @IBAction func addCustomGame(_ sender: Any) {
         backsegueIdentifier = 3
+        newGameBoolean = true
     }
     
 }

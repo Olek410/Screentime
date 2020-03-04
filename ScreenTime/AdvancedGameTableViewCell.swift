@@ -40,7 +40,11 @@ class AdvancedGameTableViewCell: UITableViewCell {
 
     }
     @IBAction func AdvancedGameCustomPressed(_ sender: Any) {
+        newGameBoolean = false
         backsegueIdentifier = 3
+        advancedCurrentIndex = gameIndex
+        advancedCurrentGame = advancedGames[advancedCurrentIndex]
+        overallCurrentGame = advancedCurrentGame
     }
     //sets labels and images to game object variables
     func setGame(tempGame:Game){
@@ -56,10 +60,13 @@ class AdvancedGameTableViewCell: UITableViewCell {
         if tempGame.editable{
             editIcon.isHidden = false
             editButton.isHidden = false
+            catagoryImage.isHidden = true
         }
-        
-        editIcon.isHidden = true
-        editButton.isHidden = true
+        else{
+            editIcon.isHidden = true
+            editButton.isHidden = true
+            catagoryImage.isHidden = false
+        }
     }
     
 }

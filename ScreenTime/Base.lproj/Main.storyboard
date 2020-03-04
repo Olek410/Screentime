@@ -683,6 +683,7 @@
                                         </state>
                                         <connections>
                                             <action selector="backToOtherScreensCustom:" destination="1ri-Od-p1p" eventType="touchUpInside" id="460-Oy-e2Y"/>
+                                            <action selector="deleteFields:" destination="1ri-Od-p1p" eventType="touchUpInside" id="RHT-2h-hnk"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qN8-Bc-Cbi">
@@ -702,6 +703,7 @@
                                             <color key="titleColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                                         </state>
                                         <connections>
+                                            <action selector="addGame:" destination="1ri-Od-p1p" eventType="touchUpInside" id="FrT-xi-TMU"/>
                                             <action selector="backToOtherScreensCustom:" destination="1ri-Od-p1p" eventType="touchUpInside" id="fEg-EL-dni"/>
                                         </connections>
                                     </button>
@@ -748,24 +750,66 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Insert Rules here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HBh-CJ-51x">
-                                <rect key="frame" x="20" y="627" width="794" height="370"/>
+                                <rect key="frame" x="20" y="747.5" width="794" height="249.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Players" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEt-DP-72L">
+                                <rect key="frame" x="20" y="627" width="794" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jdN-rd-fHV">
+                                <rect key="frame" x="20" y="667.5" width="417" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWR-0n-cPF">
+                                        <rect key="frame" x="0.0" y="0.0" width="139" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="-"/>
+                                        <connections>
+                                            <action selector="minus:" destination="1ri-Od-p1p" eventType="touchUpInside" id="4v5-Ci-jAQ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="saY-SG-2pM">
+                                        <rect key="frame" x="139" y="0.0" width="139" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZb-by-zJR">
+                                        <rect key="frame" x="278" y="0.0" width="139" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="plus:" destination="1ri-Od-p1p" eventType="touchUpInside" id="7ID-iy-bjM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ED2-BZ-7ig"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="G66-Fc-y57" firstAttribute="trailing" secondItem="fhz-NC-tuJ" secondAttribute="trailing" id="1Gx-0Z-Tz5"/>
+                            <constraint firstItem="jdN-rd-fHV" firstAttribute="width" secondItem="iYn-ak-ki2" secondAttribute="width" multiplier="0.5" id="1d3-HJ-h2r"/>
                             <constraint firstItem="fhz-NC-tuJ" firstAttribute="trailing" secondItem="eHy-dI-XY3" secondAttribute="trailing" constant="20" id="5yF-vh-A06"/>
+                            <constraint firstItem="jdN-rd-fHV" firstAttribute="leading" secondItem="fhz-NC-tuJ" secondAttribute="leading" constant="20" id="Bq4-aK-gRz"/>
+                            <constraint firstItem="HBh-CJ-51x" firstAttribute="top" secondItem="jdN-rd-fHV" secondAttribute="bottom" constant="20" id="CKL-ex-Ow8"/>
                             <constraint firstItem="slK-le-fkE" firstAttribute="top" secondItem="eHy-dI-XY3" secondAttribute="bottom" constant="20" id="CsL-5N-2q7"/>
                             <constraint firstItem="slK-le-fkE" firstAttribute="leading" secondItem="fhz-NC-tuJ" secondAttribute="leading" constant="20" id="D7P-fN-AOd"/>
+                            <constraint firstItem="jdN-rd-fHV" firstAttribute="top" secondItem="DEt-DP-72L" secondAttribute="bottom" constant="20" id="Ee5-vs-JkP"/>
                             <constraint firstItem="fhz-NC-tuJ" firstAttribute="trailing" secondItem="8PZ-bR-3H0" secondAttribute="trailing" constant="20" id="OPS-3O-Umg"/>
+                            <constraint firstItem="8PZ-bR-3H0" firstAttribute="top" secondItem="slK-le-fkE" secondAttribute="bottom" constant="20" id="PT0-rP-iQY"/>
                             <constraint firstItem="8PZ-bR-3H0" firstAttribute="leading" secondItem="fhz-NC-tuJ" secondAttribute="leading" constant="20" id="Rs9-qq-Sye"/>
                             <constraint firstItem="fhz-NC-tuJ" firstAttribute="trailing" secondItem="HBh-CJ-51x" secondAttribute="trailing" constant="20" id="Sdm-FI-DZP"/>
                             <constraint firstItem="eHy-dI-XY3" firstAttribute="top" secondItem="fhz-NC-tuJ" secondAttribute="top" constant="20" id="UFm-cK-iT8"/>
-                            <constraint firstItem="HBh-CJ-51x" firstAttribute="top" secondItem="8PZ-bR-3H0" secondAttribute="bottom" constant="20" id="bl0-7T-EgN"/>
-                            <constraint firstItem="8PZ-bR-3H0" firstAttribute="top" secondItem="slK-le-fkE" secondAttribute="bottom" constant="20" id="gYx-qs-mAG"/>
+                            <constraint firstItem="DEt-DP-72L" firstAttribute="leading" secondItem="fhz-NC-tuJ" secondAttribute="leading" constant="20" id="UZY-0B-TBm"/>
+                            <constraint firstItem="DEt-DP-72L" firstAttribute="top" secondItem="8PZ-bR-3H0" secondAttribute="bottom" constant="20" id="ZDW-Nq-Rvf"/>
+                            <constraint firstItem="fhz-NC-tuJ" firstAttribute="trailing" secondItem="DEt-DP-72L" secondAttribute="trailing" constant="20" id="hV4-gN-sT1"/>
                             <constraint firstItem="G66-Fc-y57" firstAttribute="bottom" secondItem="fhz-NC-tuJ" secondAttribute="bottom" id="jom-WU-24o"/>
                             <constraint firstItem="G66-Fc-y57" firstAttribute="top" secondItem="HBh-CJ-51x" secondAttribute="bottom" constant="20" id="mBF-8E-3aS"/>
                             <constraint firstItem="HBh-CJ-51x" firstAttribute="leading" secondItem="fhz-NC-tuJ" secondAttribute="leading" constant="20" id="ord-MK-bnC"/>
@@ -777,6 +821,11 @@
                     </view>
                     <connections>
                         <outlet property="insertImage" destination="slK-le-fkE" id="lJk-Js-YCC"/>
+                        <outlet property="materialsTextField" destination="8PZ-bR-3H0" id="fjG-FC-EqP"/>
+                        <outlet property="minus" destination="mWR-0n-cPF" id="SMR-cz-J6A"/>
+                        <outlet property="playerNumber" destination="saY-SG-2pM" id="LqO-lO-twt"/>
+                        <outlet property="plus" destination="CZb-by-zJR" id="ZW8-0x-Lnx"/>
+                        <outlet property="rulesTextView" destination="HBh-CJ-51x" id="9VB-jR-bIb"/>
                         <outlet property="titleTextField" destination="eHy-dI-XY3" id="Nyb-c5-kED"/>
                         <segue destination="ZwN-zE-nDQ" kind="custom" identifier="2" customClass="MoveRight" customModule="PlayOutlet" customModuleProvider="target" id="vdk-QO-9aE"/>
                         <segue destination="TjR-Pw-Dax" kind="custom" identifier="3" customClass="MoveRight" customModule="PlayOutlet" customModuleProvider="target" id="00B-Tq-Ilq"/>
@@ -1351,10 +1400,10 @@
         <image name="thin house color" width="768" height="768"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dki-xg-YbH"/>
-        <segue reference="YLa-T2-xeb"/>
+        <segue reference="neG-tv-F3S"/>
+        <segue reference="J24-iW-LgV"/>
         <segue reference="00B-Tq-Ilq"/>
         <segue reference="vdk-QO-9aE"/>
-        <segue reference="1a7-B5-cbG"/>
+        <segue reference="cvi-0f-TTg"/>
     </inferredMetricsTieBreakers>
 </document>
