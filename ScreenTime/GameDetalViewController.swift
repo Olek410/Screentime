@@ -96,6 +96,7 @@ class GameDetalViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         playerScores = []
         
         modalPresentationStyle = UIModalPresentationStyle.fullScreen

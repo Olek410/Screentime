@@ -751,7 +751,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Insert Rules here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HBh-CJ-51x">
                                 <rect key="frame" x="20" y="747.5" width="794" height="249.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Players" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEt-DP-72L">
@@ -1401,8 +1401,8 @@
     <inferredMetricsTieBreakers>
         <segue reference="neG-tv-F3S"/>
         <segue reference="J24-iW-LgV"/>
-        <segue reference="JPx-sv-PmK"/>
+        <segue reference="00B-Tq-Ilq"/>
         <segue reference="vdk-QO-9aE"/>
-        <segue reference="SlQ-Dg-Agu"/>
+        <segue reference="cvi-0f-TTg"/>
     </inferredMetricsTieBreakers>
 </document>
