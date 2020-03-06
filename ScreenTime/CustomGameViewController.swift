@@ -13,6 +13,8 @@ var customAdvancedGameIndex = 0
 
 var newGameBoolean = false
 
+var varSet = false
+
 class CustomGameViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var titleTextField: UITextField!
@@ -23,13 +25,17 @@ class CustomGameViewController: UIViewController, UITextFieldDelegate, UIImagePi
     @IBOutlet weak var plus: UIButton!
     @IBOutlet weak var rulesTextView: UITextView!
     
-    var playerScore = 0
+    var playerScore = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        varSet = false
+        
         customBasicGameIndex = basicGames.count
         customAdvancedGameIndex = basicGames.count
+        
+        print("qw", customBasicGameIndex)
 
         modalPresentationStyle = UIModalPresentationStyle.fullScreen
         
@@ -38,16 +44,18 @@ class CustomGameViewController: UIViewController, UITextFieldDelegate, UIImagePi
     
     func updateUI(){
         
-        if !newGameBoolean{
+        if !newGameBoolean && !varSet{
             titleTextField.text = overallCurrentGame.title
             insertImage.image = UIImage(named: overallCurrentGame.image)
             materialsTextField.text = overallCurrentGame.materials
             playerScore = overallCurrentGame.playerAmountLow
             rulesTextView.text = overallCurrentGame.rules
+            
+            varSet = true
         }
         
         playerNumber.text = String(playerScore)
-        if playerScore<=2 {
+        if playerScore<=1 {
             minus.isEnabled = false
         }
         else{
@@ -76,9 +84,45 @@ class CustomGameViewController: UIViewController, UITextFieldDelegate, UIImagePi
     }
     
     @IBAction func deleteFields(_ sender: Any) {
-        if newGameBoolean{
-            
-            
+        if !newGameBoolean{
+            switch backsegueIdentifier{
+            case 2:
+                
+                print("qwdelete", overallCurrentGame.gameIndex)
+                
+                basicGames.remove(at: overallCurrentGame.gameIndex)
+                
+                var breakloop = false
+                var i = 23
+                
+                while !breakloop {
+                    if i < basicGames.count-1{
+                        basicGames[i] = basicGames[i+1]
+                        basicGames[i].gameIndex = i
+                    }
+                    else{
+                        breakloop = true
+                    }
+                    i += 1
+                }
+                
+                customBasicGameIndex -= 1
+                basicCurrentIndex = customBasicGameIndex
+                encodeDataBasic()
+            case 3:
+                advancedGames.remove(at: customAdvancedGameIndex)
+                
+                
+                
+                
+                
+                
+                
+                customAdvancedGameIndex -= 1
+                encodeDataAdvanced()
+            default:
+                break
+            }
         }
         
     }
@@ -98,6 +142,17 @@ class CustomGameViewController: UIViewController, UITextFieldDelegate, UIImagePi
             break
             }
         
+        }
+        else{
+            
+            overallCurrentGame.title = titleTextField.text ?? ""
+            //overallCurrentGame.image = insertImage
+            overallCurrentGame.materials = materialsTextField.text ?? ""
+            overallCurrentGame.playerAmountLow = playerScore
+            overallCurrentGame.rules = rulesTextView.text
+            encodeDataBasic()
+            encodeDataAdvanced()
+            
         }
     }
     
