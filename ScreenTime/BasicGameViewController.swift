@@ -43,7 +43,6 @@ class BasicGameViewController: UIViewController {
     @IBAction func basicRandomizer(_ sender: Any) {
         backsegueIdentifier = 2
         overallCurrentGame = basicGames[Int.random(in: 0...(basicGames.count)-1)]
-        performSegue(withIdentifier: "basicRandomizer", sender: self)
     }
     
 

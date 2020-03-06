@@ -63,7 +63,6 @@ class HomeScreen: UIViewController {
     @IBAction func homeRandomizerPressed(_ sender: Any) {
         backsegueIdentifier = 1
         overallCurrentGame = overallGames[Int.random(in: 0...(overallGames.count)-1)]
-        performSegue(withIdentifier: "random", sender: self)
     }
     
     @IBAction func InfoIconPress(_ sender: Any) {

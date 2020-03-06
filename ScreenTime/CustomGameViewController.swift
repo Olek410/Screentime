@@ -38,7 +38,8 @@ class CustomGameViewController: UIViewController, UITextFieldDelegate, UIImagePi
         
         if !newGameBoolean && !varSet{
             titleTextField.text = overallCurrentGame.title
-            insertImage.image = UIImage(named: overallCurrentGame.image)
+            //Image selection not implemented
+            //insertImage.image = UIImage(named: overallCurrentGame.image)
             materialsTextField.text = overallCurrentGame.materials
             playerScore = overallCurrentGame.playerAmountLow
             rulesTextView.text = overallCurrentGame.rules
@@ -127,10 +128,10 @@ class CustomGameViewController: UIViewController, UITextFieldDelegate, UIImagePi
         if newGameBoolean {
         switch backsegueIdentifier {
         case 2:
-            basicGames.append(Game.init(catagory: "card", title: titleTextField.text ?? "", image: "insertImageIcon.001", difficulty: "", playerAmountLow: playerScore, playerAmountHigh: playerScore, materials: materialsTextField.text ?? "", rules: rulesTextView.text, favorite: false, gameIndex: basicGames.count, editable: true))
+            basicGames.append(Game.init(catagory: "card", title: titleTextField.text ?? "", image: "customGameImage", difficulty: "", playerAmountLow: playerScore, playerAmountHigh: playerScore, materials: materialsTextField.text ?? "", rules: rulesTextView.text, favorite: false, gameIndex: basicGames.count, editable: true))
             encodeDataBasic()
         case 3:
-            advancedGames.append(Game.init(catagory: "card", title: titleTextField.text ?? "", image: "insertImageIcon.001", difficulty: "", playerAmountLow: playerScore, playerAmountHigh: playerScore, materials: materialsTextField.text ?? "", rules: rulesTextView.text, favorite: false, gameIndex: advancedGames.count, editable: true))
+            advancedGames.append(Game.init(catagory: "card", title: titleTextField.text ?? "", image: "customGameImage", difficulty: "", playerAmountLow: playerScore, playerAmountHigh: playerScore, materials: materialsTextField.text ?? "", rules: rulesTextView.text, favorite: false, gameIndex: advancedGames.count, editable: true))
             encodeDataAdvanced()
         default:
             break

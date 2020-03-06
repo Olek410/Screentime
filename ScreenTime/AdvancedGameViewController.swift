@@ -42,7 +42,6 @@ class AdvancedGameViewController: UIViewController {
     @IBAction func advancedRandomizer(_ sender: Any) {
         backsegueIdentifier = 3
         overallCurrentGame = advancedGames[Int.random(in: 0...(advancedGames.count)-1)]
-        performSegue(withIdentifier: "advancedRandomizer", sender: self)
     }
     
     @IBAction func addCustomGame(_ sender: Any) {
